@@ -1,15 +1,22 @@
 "use client";
 
+import React, { useState } from 'react';
 import { PiSunDimFill } from 'react-icons/pi'
 import { BiSolidMoon } from 'react-icons/bi'
 
-import React, { useState } from 'react';
+import { useTheme } from 'next-themes';
 
 const ThemeSwitch: React.FC = () => {
-    const [isDayMode, setIsDayMode] = useState(false);
+  const [isDayMode, setIsDayMode] = useState(false);
+  const { theme, setTheme } = useTheme()
 
     const toggleTheme = () => {
       setIsDayMode(!isDayMode);
+      if(isDayMode && theme === "light"){
+        setTheme("dark")
+      }else{
+        setTheme("light")
+      }
     };
     return (
         <div className="relative w-16 h-8 rounded-full p-1 

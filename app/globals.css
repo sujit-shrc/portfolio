@@ -12,46 +12,47 @@
   --root-text: black;
   --root-active: black;
   --root-inactive: slateGray;
-  
-  --primary: #222327;
-  --bg-start:#222327;
-  --bg-end:#222327;
-  --primary-contrast: #c6c9d0;
-  --secondary: #ddd;
-  --secondary-contrast: #bcbbbb;
-  --text: white;
-  --icon-contrast: rgb(37, 37, 37);
-  --hover-background: white;
-  --active: slateGray;
-  --soft-contrast: rgb(15, 15, 15);
-  --inactive: white;
-  --text-contrast:#222327;
-  --next-icon:#395ab6;
-  --react-icon:#38c3d5;
-  --expo-icon:#24dfa0;
-  --container-start:#000;
-  --container-end:#3a3a3a;
-  --dark-primary: #edf2f8;
-  --dark-bg-start:#edf2f8;
-  --dark-bg-end:#d5d6d7;
-  --dark-primary-contrast: #ffffff;
-  --dark-secondary: #97969c;
-  --dark-secondary-contrast: #180d5c;
+
+  --primary: #edf2f8;
+  --bg-start:#edf2f8;
+  --bg-end:#d5d6d7;
+  --primary-contrast: #ffffff;
+  --secondary: #97969c;
+  --secondary-contrast: #180d5c;
   --hover-background: #e6e4e7;
-  --dark-text: black;
-  --dark-icon-contrast: rgb(255, 255, 255);
-  --dark-soft-contrast: rgb(34, 33, 33);
-  --dark-active: black;
-  --dark-inactive: slateGray;
+  --text: black;
+  --icon-contrast: rgb(255, 255, 255);
+  --soft-contrast: rgb(34, 33, 33);
+  --active: black;
+  --inactive: slateGray;
+  --text-contrast:#222327;
+  --next-icon:#0c142a;
+  --react-icon:#278894;
+  --expo-icon:#117453;
+  --container-start:rgb(50, 50, 50);
+  --container-end:#191818;
+  
+  --dark-primary: #222327;
+  --dark-bg-start:#222327;
+  --dark-bg-end:#222327;
+  --dark-primary-contrast: #c6c9d0;
+  --dark-secondary: #ddd;
+  --dark-secondary-contrast: #bcbbbb;
+  --dark-text: white;
+  --dark-icon-contrast: rgb(37, 37, 37);
+  --dark-hover-background: white;
+  --dark-active: slateGray;
+  --dark-soft-contrast: rgb(15, 15, 15);
+  --dark-inactive: white;
   --dark-text-contrast:#222327;
-  --dark-next-icon:#0c142a;
-  --dark-react-icon:#278894;
-  --dark-expo-icon:#117453;
-  --dark-container-start:rgb(50, 50, 50);
-  --dark-container-end:#191818;
+  --dark-next-icon:#395ab6;
+  --dark-react-icon:#38c3d5;
+  --dark-expo-icon:#24dfa0;
+  --dark-container-start:#000;
+  --dark-container-end:#3a3a3a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -68,3 +69,4 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
