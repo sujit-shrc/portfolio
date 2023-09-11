@@ -1,40 +1,50 @@
 "use client"
-import React, { useEffect, useState } from 'react';
+
+import { useEffect, useState } from 'react';
 
 const TyperComponent: React.FC = () => {
-  const [nameText, setNameText] = useState<string>('');
-  const [surnameText, setSurnameText] = useState<string>('');
+  const [nameIndex, setNameIndex] = useState<number>(-1);
+  const [surnameIndex, setSurnameIndex] = useState<number>(-1);
   const [phraseText, setPhraseText] = useState<string>('');
-  const [phase, setPhase] = useState<number>(0);
+  const [phase, setPhase] = useState<number>(-1);
   const name = 'Sujit';
   const surname = 'Kumar';
   const phrases = ['Nucleus Stack Showcase'];
 
+  // Initial Delay to Start Typer
+  useEffect(() => {
+    if (phase === -1) {
+      const initialDelay = setTimeout(() => {
+        setPhase(0);
+      }, 1000);
+
+      return () => clearTimeout(initialDelay);
+    }
+  }, [phase]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       if (phase === 0) {
-        const nameToDisplay = name.slice(0, nameText.length + 1);
-        const surnameToDisplay = surname.slice(0, surnameText.length + 1);
-        setNameText(nameToDisplay);
-        setSurnameText(surnameToDisplay);
-
-        if (nameToDisplay === name && surnameToDisplay === surname) {
-          setPhase(1);
+        if (nameIndex < name.length || surnameIndex < surname.length) {
+          setNameIndex(nameIndex + 1);
+          setSurnameIndex(surnameIndex + 1);
+        }
+        if (nameIndex === name.length && surnameIndex === surname.length) {
+          setTimeout(() => setPhase(1), 2000)
         }
       } else if (phase === 1) {
-        const nameToRemove = nameText.slice(0, nameText.length - 1);
-        const surnameToRemove = surnameText.slice(0, surnameText.length - 1);
-        setNameText(nameToRemove);
-        setSurnameText(surnameToRemove);
-
-        if (nameToRemove === '' && surnameToRemove === '') {
-          setPhase(2);
+        if (nameIndex > 0 || surnameIndex > 0) {
+          setNameIndex(nameIndex - 1);
+          setSurnameIndex(surnameIndex - 1);
+        }
+         if (nameIndex === 0 && surnameIndex === 0) {
+          setTimeout(() => setPhase(2), 100);
         }
       }
-    }, 200);
+    }, 300);
 
     return () => clearInterval(interval);
-  }, [nameText, surnameText, phase]);
+  }, [nameIndex, surnameIndex, phase, name.length, surname.length]);
 
   useEffect(() => {
     if (phase === 2) {
@@ -43,7 +53,7 @@ const TyperComponent: React.FC = () => {
         setPhraseText(phraseToDisplay);
 
         if (phraseToDisplay === phrases[0]) {
-          clearInterval(interval); // Stop the interval when the phrase is fully displayed
+          clearInterval(interval);
         }
       }, 200);
 
@@ -51,13 +61,14 @@ const TyperComponent: React.FC = () => {
     }
   }, [phase, phraseText, phrases]);
 
+
   return (
-    <div className="text-4xl font-bold p-4">
-      <span className={`text-purple-600 transition-opacity ${phase === 0 ? 'opacity-100' : 'opacity-0'}`}>{nameText}</span>
-      <span className="mx-1"> </span>
-      <span className={`text-purple-600 transition-opacity ${phase === 0 ? 'opacity-100' : 'opacity-0'}`}>{surnameText}</span>
+    <div className="text-4xl font-bold p-4 text-dark dark:text-light">
+      <span>
+        {name.substring(0, nameIndex)}&nbsp;{surname.substring(0, surnameIndex)}
+      </span>
       {phase === 2 && (
-        <span className={`text-green-600 ml-4 transition-opacity duration-1000 ${phase === 2 ? 'opacity-100' : 'opacity-0'}`}>{phraseText}</span>
+        <span>{phraseText}</span>
       )}
     </div>
   );
