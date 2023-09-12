@@ -1,6 +1,6 @@
 "use client"
 import Card from "./Card";
-import visits from '../../locales/navigate.json'
+import data from '../../locales/data.json'
 
 interface CardData {
     href: string;
@@ -9,7 +9,7 @@ interface CardData {
   }
 const BottomNav = () => {
 
-    const cardData: CardData[] = visits;
+    const cardData: CardData[] = data.navigate;
 
 
     return (
