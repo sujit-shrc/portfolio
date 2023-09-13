@@ -42,21 +42,21 @@ const index: React.FC<Type> = ({
 
   return (
     <Link href={link} target="_blank">
-      <div className="relative overflow-hidden bg-cover bg-center w-64 h-40 m-2" style={{ backgroundImage: image }}
+      <div className="relative overflow-hidden bg-cover bg-center w-80 h-44 m-2" style={{ backgroundImage: image }}
        onMouseEnter={handleMouseEnter}
        onMouseLeave={handleMouseLeave}
       >
-        <div  className={`absolute bottom-0 w-full text-white bg-slate-900 bg-opacity-50 transition-all duration-500 ease ${
-            hovered ? "bottom-1/4 bg-opacity-80" : "bottom-0"
+        <div  className={`absolute bottom-0 w-full py-1 text-white bg-slate-900 bg-opacity-50 transition-all duration-500 ease ${
+            hovered ? "bottom-9 bg-opacity-80" : "bottom-0"
           }`}>
           <span className="text-[22px] mx-1.5">{title}</span>
         </div>
         <div className={`absolute bottom-0 flex items-center w-full transition-all duration-500 ease bg-white ${
-            hovered ? "bottom-1/6 opacity-100" : "bottom-[-50px] opacity-0"
+            hovered ? "bottom-0 opacity-100" : "bottom-[-50px] opacity-0"
           }`}>
           {techStackIcons.map((item, key) =>
             technologies.includes(item.name) ? (
-              <div key={key} className="inline-block mx-1.5 py-0.5">
+              <div key={key} className="inline-block mx-1.5 py-1">
                 {item.icon}
               </div>
             ) : (

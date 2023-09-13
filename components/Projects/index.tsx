@@ -28,12 +28,12 @@ const index: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex mb-4">
+      <div className="flex flex-wrap mb-4">
         {buttonOptions.map((option) => (
           <button
             key={option.filter}
-            className={`mr-2 ${
-              selected === option.filter ? "bg-blue-500 text-white" : "border"
+            className={`mr-2 text-white ${
+              selected === option.filter ? "bg-slate-200 text-black" : "border"
             } px-4 py-2 rounded`}
             onClick={() => handleButtonClick(option.filter)}
           >
