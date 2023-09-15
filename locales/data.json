@@ -6,7 +6,7 @@
       "description": "A Digital Gallery of My Web Creations and Projects"
     },
     {
-      "href": "about", 
+      "href": "about",
       "title": "About Me",
       "description": "Explore My Realm: My Tech Stack and Experiences"
     },
@@ -29,5 +29,4 @@
     "title": "My Dev. Environment",
     "description": "I'm an experienced web developer with a passion for crafting dynamic and user-friendly web applications. My journey in the world of web development has equipped me with a versatile skill set that spans both the frontend and backend domains. \n I'm a tech writer, contributing articles to Dev.to, and an active participant in open-source projects. \n Take a look at my work and let's collaborate on your next venture!"
   }
-  
 }
