@@ -30,7 +30,7 @@ const index: React.FC<Type> = ({
     { name: "html", icon: <FaHtml5 size={30} /> },
     { name: "css", icon: <FaCss3 size={30} /> },
   ];
-  
+
 
   const handleMouseEnter = () => {
     setHovered(true);
