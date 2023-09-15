@@ -54,7 +54,7 @@ const index: React.FC<Type> = ({
         <div className={`absolute bottom-0 flex items-center w-full transition-all duration-500 ease bg-white ${
             hovered ? "bottom-0 opacity-100" : "bottom-[-50px] opacity-0"
           }`}>
-          {techStackIcons.map((item, key) =>
+          {techStackIcons.map((item:{name: string, icon: React.ReactNode}, key: number) =>
             technologies.includes(item.name) ? (
               <div key={key} className="inline-block mx-1.5 py-1">
                 {item.icon}
