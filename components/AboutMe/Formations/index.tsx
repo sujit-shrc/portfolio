@@ -1,6 +1,4 @@
-// pages/index.tsx
 
-import React from 'react';
 import EducationEntry from './Formation';
 import CertificationEntry from './Courses';
 import { FaGraduationCap, FaCertificate } from 'react-icons/fa';
@@ -9,33 +7,40 @@ import { FaGraduationCap, FaCertificate } from 'react-icons/fa';
 const Home: React.FC = () => {
 
     const educationData = [
-        {
-          degree: 'Bachelor of Science in Computer Science',
-          school: 'Example University',
+    	{
+          degree: 'Master of Computer Application',
+          school: 'Kamla Nehru Instiute of Technology',
           icon: FaGraduationCap,
-          year: '2020',
+          year: '2024',
         },
         {
-          degree: 'Master of Science in Software Engineering',
-          school: 'Sample College',
+          degree: 'Bachelor of Computer Applicaton',
+          school: 'CSJM University Kanpur',
           icon: FaGraduationCap,
           year: '2022',
-        },
+        }
+        
     ];
 
     const courses = [
         {
-          logoSrc: '/company1-logo.png',
-          certification: 'Certification 1',
-          company: 'Company 1',
-          validatorLink: 'https://example.com/certification1',
+          logoSrc: '/devsnest.png',
+          certification: 'Data Structures And Algorithms',
+          company: 'Devsnest',
+          validatorLink: 'https://devsnest.in/certificate/+W4QmqriuBY',
         },
         {
-          logoSrc: '/company2-logo.png',
-          certification: 'Certification 2',
-          company: 'Company 2',
-          validatorLink: 'https://example.com/certification2',
+          logoSrc: '/devsnest.png',
+          certification: 'Front-End Web Development',
+          company: 'Devsnest',
+          validatorLink: 'https://devsnest.in/certificate/igmVDkY31hk',
         },
+        {
+          logoSrc: '/devsnest.png',
+          certification: 'Batch Lead',
+          company: 'Devsnest',
+          validatorLink: 'https://devsnest.in/certificate/Bi+ejdG02Rs',
+        }
       ];
 
   return (

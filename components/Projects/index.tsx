@@ -6,15 +6,15 @@ import ImageCard from "./ImageCard";
 
 const buttonOptions = [
   {
-    filter: "github",
+    filter: "fronted",
     label: "Front-End",
   },
   {
-    filter: "complex",
+    filter: "backend",
     label: "Back-End",
   },
   {
-    filter: "figma",
+    filter: "complex",
     label: "More Complex",
   },
 ];

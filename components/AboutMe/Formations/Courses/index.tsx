@@ -1,6 +1,4 @@
-// components/CertificationEntry.tsx
-
-import React from 'react';
+import Image from "next/image";
 
 interface CertificationEntryProps {
   logoSrc: string;
@@ -19,7 +17,7 @@ const CertificationEntry: React.FC<CertificationEntryProps> = ({
     <li className="mb-4">
       <div className="flex items-center">
         <div className="mr-2">
-          <img src={logoSrc} alt={company} width={24} height={24} />
+          <Image src={logoSrc} alt={company} width={24} height={24} />
         </div>
         <div>
           <h3 className="text-lg font-semibold">{certification}</h3>
