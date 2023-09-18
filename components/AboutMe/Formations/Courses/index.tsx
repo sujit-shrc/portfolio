@@ -1,39 +1,42 @@
+"use client"
 import Image from "next/image";
+import { CgChevronDoubleRight } from "react-icons/cg"
 
-interface CertificationEntryProps {
+interface Props {
   logoSrc: string;
   certification: string;
   company: string;
   validatorLink: string;
 }
 
-const CertificationEntry: React.FC<CertificationEntryProps> = ({
+const index: React.FC<Props> = ({
   logoSrc,
   certification,
   company,
   validatorLink,
 }) => {
   return (
-    <li className="mb-4">
-      <div className="flex items-center">
-        <div className="mr-2">
+    <div className="flex items-center justify-between">
+      <div className="flex items-center space-x-4 space-y-4">
+        <div className="bg-slate-200 p-2 rounded-full">
           <Image src={logoSrc} alt={company} width={24} height={24} />
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold">{certification}</h3>
-          <p className="text-gray-500">{company}</p>
-          <a
-            href={validatorLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
-          >
-            Validate Certificate
-          </a>
+          </div>
+        <div className="space-y-[1px]">
+          <p className="text-sm font-medium leading-none">{certification}</p>
+          <p className="text-sm text-gray-500">@{company}</p>
         </div>
       </div>
-    </li>
+      <div className="flex items-center justify-center space-x-1 px-2 py-1 border-[0.5px] border-slate-500 rounded-md">
+      <a
+       href={validatorLink}
+       target="_blank"
+       rel="noopener noreferrer" 
+      >view</a>
+      <CgChevronDoubleRight />
+      </div>
+    </div>
   );
 };
 
-export default CertificationEntry;
+export default index;
+

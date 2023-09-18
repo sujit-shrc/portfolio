@@ -47,7 +47,7 @@ const index: React.FC = () => {
     {
       icon: <SiMariadb size="60" />,
       href: 'https://mariadb.org',
-      title: 'MariaDB',
+      title: 'MariaDb',
     },
     {
       icon: <BiLogoMongodb size="60" />,
