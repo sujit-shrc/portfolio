@@ -1,35 +1,26 @@
-"use client";
-
-import React, { useState } from 'react';
-import { PiSunDimFill } from 'react-icons/pi'
-import { BiSolidMoon } from 'react-icons/bi'
-
+"use client"
+import { PiSunDimFill } from 'react-icons/pi';
+import { BiSolidMoon } from 'react-icons/bi';
 import { useTheme } from 'next-themes';
-
+import { RiComputerFill } from 'react-icons/ri'
 const ThemeSwitch: React.FC = () => {
-  const [isDayMode, setIsDayMode] = useState(false);
-  const { theme, setTheme } = useTheme()
-
-    const toggleTheme = () => {
-      setIsDayMode(!isDayMode);
-      if(isDayMode && theme === "light"){
-        setTheme("dark")
-      }else{
-        setTheme("light")
-      }
-    };
-    return (
-        <div className="relative w-16 h-8 rounded-full p-1 
-        cursor-pointer bg-[#ccc]" onClick={toggleTheme}>
-        <button
-          className={`flex items-center justify-center w-6 h-6 text-dark-text bg-white rounded-full transform ${
-            isDayMode ? 'translate-x-0' : 'translate-x-8'
-          } transition-transform duration-500 ease-in-out`}
-        >
-          {isDayMode ? <PiSunDimFill size={16} /> : <BiSolidMoon />}
-        </button>
-      </div>
-    );
+  const { setTheme } = useTheme();
+  return (
+    <div
+      className="flex gap-1 rounded-full px-2 py-1 cursor-pointer bg-[#ccc] dark:bg-gray-700"
+    >
+      <button onClick={() => setTheme("light")}>
+          <PiSunDimFill size={30} />
+         </button>
+         <button onClick={() => setTheme("dark")}>
+           <BiSolidMoon size={22} />
+         </button>
+         <button onClick={() => setTheme("system")}>
+           <RiComputerFill size={20} />
+         </button>
+      
+    </div>
+  );
 };
 
 export default ThemeSwitch;

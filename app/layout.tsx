@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Provider from './provider'
+import ThemeProvider from './provider'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -18,11 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Provider>
-          <div className='bg-primary dark:bg-dark-primary'>
-          {children}
-          </div>
-        </Provider>
+         <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
       </body>
     </html>
   )
