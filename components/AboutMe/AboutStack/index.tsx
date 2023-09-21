@@ -47,7 +47,7 @@ const index: React.FC = () => {
     {
       icon: <SiMariadb size="60" />,
       href: 'https://mariadb.org',
-      title: 'MariaDb',
+      title: 'MariaDB',
     },
     {
       icon: <BiLogoMongodb size="60" />,
@@ -71,7 +71,7 @@ const index: React.FC = () => {
     },
   ]
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap text-dark">
       {skills.map((data: { icon: React.ReactNode; title: string; href: string }, index: number) => (
         <IconsCard key={index} {...data} />
       ))}
