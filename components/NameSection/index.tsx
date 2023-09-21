@@ -9,14 +9,14 @@ const TyperComponent: React.FC = () => {
   const [phase, setPhase] = useState<number>(-1);
   const name = 'Sujit';
   const surname = 'Kumar';
-  const phrases = ["NucleusTech: A Glimpse into My Stack"];
+  const phrases = ["A Glimpse into My Stack"];
 
   // Initial Delay to Start Typer
   useEffect(() => {
     if (phase === -1) {
       const initialDelay = setTimeout(() => {
         setPhase(0);
-      }, 1000);
+      }, 200);
 
       return () => clearTimeout(initialDelay);
     }
@@ -63,8 +63,8 @@ const TyperComponent: React.FC = () => {
 
 
   return (
-    <div className="text-4xl font-bold p-4 text-dark dark:text-light">
-      <span className='text-5xl'>
+    <div className="font-limelight text-5xl font-bold p-4 text-dark dark:text-light">
+      <span className='text-6xl'>
         {name.substring(0, nameIndex)}&nbsp;{surname.substring(0, surnameIndex)}
       </span>
       {phase === 2 && (

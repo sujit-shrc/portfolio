@@ -4,6 +4,7 @@ import { GrTwitter } from "react-icons/gr";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import SocialLink from "./SocialLinks";
 import ThemeSwitch from "../ThemeSwitcher";
+import ScanMe from "../ScanMe";
 
 
 const socialLinks = [
@@ -36,8 +37,11 @@ const Header: React.FC = () => {
         ))}
       </div>
 
+     <div className="flex items-center gap-8">
       {/* Theme Switcher */}
-      <ThemeSwitch />
+     <ThemeSwitch />
+      <ScanMe />
+     </div>
     </div>
   );
 };

@@ -9,6 +9,9 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        limelight: ['limelight', 'sans-serif'],
+      },
      colors: {
       "primary": "var(--primary)",
       "light-bg-start": "var(--bg-start)",
