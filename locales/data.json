@@ -6,7 +6,7 @@
       "description": "A Digital Gallery of My Web Creations and Projects"
     },
     {
-      "href": "about", 
+      "href": "aboutme", 
       "title": "About Me",
       "description": "Explore My Realm: My Tech Stack and Experiences"
     },
@@ -16,7 +16,7 @@
       "description": "Explore my journey as a contributor and discover insightful articles"
     },
     {
-      "href": "contact",
+      "href": "contactme",
       "title": "Contact",
       "description": "Let's Break the Digital Gap: Reach Out and Connect Today"
     }
