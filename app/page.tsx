@@ -4,7 +4,7 @@ import TyperComponent from "@/components/NameSection";
 
 export default function Home() {
   return (
-    <main className="h-[calc(100vh-120px)] flex flex-col items-center justify-between pt-16 md:pt-28 lg:pt-32 xl:pt-40">
+    <main className="flex flex-col items-center justify-between">
       <TyperComponent />
       <BottomNav />
     </main>

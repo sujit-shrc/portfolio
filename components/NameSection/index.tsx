@@ -63,7 +63,7 @@ const TyperComponent: React.FC = () => {
 
 
   return (
-    <div className="font-limelight text-5xl font-bold p-4 text-dark dark:text-light">
+    <div className="font-limelight text-center text-4xl lg:text-5xl font-semibold min-h-[calc(100vh-250px)] md:min-h-[calc(100vh-300px)] flex items-center p-4">
       <span className='text-6xl'>
         {name.substring(0, nameIndex)}&nbsp;{surname.substring(0, surnameIndex)}
       </span>

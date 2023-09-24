@@ -34,7 +34,7 @@ const Header: React.FC = () => {
         ))}
       </div>
 
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-4 md:gap-8">
         {/* Theme Switcher */}
         <ThemeSwitch />
         <ScanMe />
