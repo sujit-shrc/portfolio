@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import ThemeProvider from './provider'
+import Header from '@/components/Header'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -23,8 +24,11 @@ export default function RootLayout({
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
-          >
-            {children}
+          > 
+           <div className='min-h-screen min-w-screen flex flex-col items-center pt-14'>
+              <Header />
+              {children}
+           </div>
           </ThemeProvider>
       </body>
     </html>
