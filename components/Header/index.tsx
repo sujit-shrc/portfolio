@@ -1,15 +1,15 @@
 import { FaFilePdf, FaLinkedinIn } from "react-icons/fa";
 import { ImGithub } from "react-icons/im";
 import { GrTwitter } from "react-icons/gr";
-import { PiInstagramLogoFill } from "react-icons/pi";
+import { PiInstagramLogoFill, PiDevToLogoFill } from "react-icons/pi";
 import SocialLink from "./SocialLinks";
 import ThemeSwitch from "../ThemeSwitcher";
 import ScanMe from "../ScanMe";
 
 
-const socialLinks = [
-  { href: "#", icon: <FaFilePdf size={28} className="" /> },
+const socialLinks = [ 
   { href: "#", icon: <ImGithub size={30} className="" /> },
+  { href: "#", icon: <PiDevToLogoFill size={30} className="" /> },
   {
     href: "#",
     icon: <FaLinkedinIn size={30} className="" />,
@@ -19,6 +19,7 @@ const socialLinks = [
     icon: <PiInstagramLogoFill size={30} className="" />,
   },
   { href: "#", icon: <GrTwitter size={30} className="" /> },
+  { href: "#", icon: <FaFilePdf size={28} className="" /> },
 ];
 
 const Header: React.FC = () => {
