@@ -34,7 +34,7 @@ const DevToPosts: React.FC = () => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <div className="border border-slate-400 p-4 rounded-lg shadow-md hover:shadow-lg hover:bg-gray-900 transition duration-300 cursor-pointer">
+            <div className="border border-slate-400 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
               <div className="relative h-40 group">
                 <Image
                   src={post.cover_image}
@@ -44,7 +44,7 @@ const DevToPosts: React.FC = () => {
                   className="rounded-lg transform group-hover:scale-105 transition-transform"
                 />
               </div>
-              <h2 className="text-xl font-semibold mt-4 text-white">
+              <h2 className="text-lg md:text-xl font-semibold mt-4 text-white">
                 {post.title}
               </h2>
               <div className="flex items-center text-gray-400 mt-2">

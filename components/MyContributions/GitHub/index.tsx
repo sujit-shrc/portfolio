@@ -98,7 +98,9 @@ const index: React.FC = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div className='flex flex-col gap-6'>
+      <h2 className='text-2xl md:text-3xl'>My Involvement in Open Source Initiatives</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       {contributions.map((contribution, index) => (
         <div key={index} className="border text-white border-gray-500 p-4 rounded-lg shadow-md">
           <div className="flex justify-between">
@@ -106,7 +108,7 @@ const index: React.FC = () => {
               <h3 className="text-lg font-semibold">{contribution.repo_name}</h3>
               <p className="text-gray-400">{contribution.repo_desc}</p>
             </div>
-            <button className="h-fit px-3 py-1 bg-gray-600 rounded-md">
+            <button className="h-fit px-2 py-1 bg-slate-800 rounded-md">
               <TiStarOutline size={20} />
             </button>
           </div>
@@ -125,6 +127,7 @@ const index: React.FC = () => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };

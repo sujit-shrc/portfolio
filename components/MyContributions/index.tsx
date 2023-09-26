@@ -4,7 +4,7 @@ import GitHub from "./GitHub";
 
 const index: React.FC =  () => {
     return (
-        <div>
+        <div className="flex flex-col gap-8">
             <DevToPosts />
             <GitHub />
         </div>
