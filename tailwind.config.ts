@@ -12,6 +12,9 @@ const config: Config = {
       fontFamily: {
         limelight: ['limelight', 'sans-serif'],
       },
+      backgroundImage: {
+        'image': "url('/bg.svg')",
+      },
     },
   },
   plugins: [],

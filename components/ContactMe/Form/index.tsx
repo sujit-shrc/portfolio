@@ -70,68 +70,68 @@ const index: React.FC = () => {
   };
 
   return (
-    <div className="w-[500px] px-8 mx-auto p-6 border border-slate-200 rounded shadow-md">
-      {submitted ? (
-        <p className="mt-4 text-green-600">Message sent successfully!</p>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-300">Name</label>
-            <input
-              type="text"
-              name="name"
-              placeholder='Nucleus'
-              value={formData.name}
-              onChange={handleInputChange}
-              className={`mt-1 p-2 w-full border ${
-                errors.name ? 'border-red-500' : 'border-gray-300'
-              } rounded`}
-            />
-            {errors.name && (
-              <p className="text-red-500 text-xs mt-1">{errors.name}</p>
-            )}
-          </div>
-          <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-300">Email</label>
-            <input
-              type="text"
-              name="email"
-              placeholder='nucleus@me.com'
-              value={formData.email}
-              onChange={handleInputChange}
-              className={`mt-1 p-2 w-full border ${
-                errors.email ? 'border-red-500' : 'border-gray-300'
-              } rounded`}
-            />
-            {errors.email && (
-              <p className="text-red-500 text-xs mt-1">{errors.email}</p>
-            )}
-          </div>
-          <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-300">Message</label>
-            <textarea
-              name="message"
-              rows={3}
-              placeholder='your message'
-              value={formData.message}
-              onChange={handleInputChange}
-              className={`mt-1 p-2 w-full border ${
-                errors.message ? 'border-red-500' : 'border-gray-300'
-              } rounded`}
-            />
-            {errors.message && (
-              <p className="text-red-500 text-xs mt-1">{errors.message}</p>
-            )}
-          </div>
-          <button
-            type="submit"
-            className="bg-slate-400 text-black px-4 py-2 rounded hover:bg-slate-400 transition-colors duration-300"
-          >
-            Send Message
-          </button>
-        </form>
-      )}
-    </div>
+    <div className="w-full md:w-[500px] mx-auto border border-slate-200 rounded shadow-md p-3 md:p-5">
+    {submitted ? (
+      <p className="mt-4 text-green-600">Message sent successfully!</p>
+    ) : (
+      <form onSubmit={handleSubmit}>
+        <div className="mb-4">
+          <label className="block text-sm font-medium">Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder='Nucleus'
+            value={formData.name}
+            onChange={handleInputChange}
+            className={`mt-1 p-2 w-full border ${
+              errors.name ? 'border-red-500' : 'border-gray-300'
+            } rounded`}
+          />
+          {errors.name && (
+            <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+          )}
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-medium">Email</label>
+          <input
+            type="text"
+            name="email"
+            placeholder='nucleus@me.com'
+            value={formData.email}
+            onChange={handleInputChange}
+            className={`mt-1 p-2 w-full border ${
+              errors.email ? 'border-red-500' : 'border-gray-300'
+            } rounded`}
+          />
+          {errors.email && (
+            <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+          )}
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-medium">Message</label>
+          <textarea
+            name="message"
+            rows={3}
+            placeholder='your message'
+            value={formData.message}
+            onChange={handleInputChange}
+            className={`mt-1 p-2 w-full border ${
+              errors.message ? 'border-red-500' : 'border-gray-300'
+            } rounded`}
+          />
+          {errors.message && (
+            <p className="text-red-500 text-xs mt-1">{errors.message}</p>
+          )}
+        </div>
+        <button
+          type="submit"
+          className="bg-slate-400 text-black px-4 py-2 rounded hover:bg-slate-400 transition-colors duration-300 w-full md:w-auto"
+        >
+          Send Message
+        </button>
+      </form>
+    )}
+  </div>  
   );
 };
 
