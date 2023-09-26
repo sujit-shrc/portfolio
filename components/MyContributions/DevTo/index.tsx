@@ -44,10 +44,10 @@ const DevToPosts: React.FC = () => {
                   className="rounded-lg transform group-hover:scale-105 transition-transform"
                 />
               </div>
-              <h2 className="text-lg md:text-xl font-semibold mt-4 text-white">
+              <h2 className="text-lg md:text-xl font-semibold mt-4">
                 {post.title}
               </h2>
-              <div className="flex items-center text-gray-400 mt-2">
+              <div className="flex items-center mt-2">
                 <IoMdTime className="mr-2" />
                 {new Date(post.published_at).toLocaleDateString()}
                 <span className="ml-2">
