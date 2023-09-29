@@ -1,6 +1,7 @@
 import Education from "./Formation";
 import Courses from "./Courses";
 import { FaGraduationCap } from "react-icons/fa";
+import { MdContentCopy } from "react-icons/md"
 
 const index: React.FC = () => {
   const education = [
@@ -40,31 +41,31 @@ const index: React.FC = () => {
   ];
 
   return (
-    <div className="container text-white">
-      <h1 className="text-3xl font-bold mb-4">Formations and courses</h1>
-      <div className="flex flex-wrap">
-        <div className="w-full sm:w-1/2">
-          <h2 className="text-2xl font-semibold mb-2">Education</h2>
+    <div className="">
+      <h1 className="text-3xl font-bold mb-4 text-center">Formations and courses</h1>
+      <div className="flex flex-col lg:gap-4 pt-6 lg:px-10 md:flex-row items-center justify-center md:justify-evenly">
+        <div className="flex flex-col gap-3 space-y-1">
+          <h2 className="text-3xl font-semibold mb-2">Education</h2>
           <ul>
             {education.map((edu, index) => (
               <Education key={index} {...edu} />
             ))}
           </ul>
         </div>
-        <div className="sm:w-1/2">
-          <div className="w-fit p-6 rounded-md border">
+        <div className="">
+          <div className="w-fit p-4 md:p-6 rounded-md border border-slate-600">
             <div className="space-y-1">
               <h1 className="text-xl text-semibold">Refer my resume</h1>
               <p className="text-gray-500">Anyone with the link can view this document.</p>
             </div>
-            <div className="flex space-x-3 my-2">
+            <div className="w-100 flex space-x-1 md:space-x-3">
               <input
                 value="https://gdrive.com/Xfkek4dsd34se33sd3sl3sd4322990%dsk/myresume.pdf"
                 readOnly
-                className="px-2 py-1 rounded-md outline-none"
+                className="w-full px-2 py-1 bg-gray-700 rounded-md outline-none"
               />
-              <button className="text-sm bg-gray-700 px-2 py-1 rounded-md shrink-0">
-                Copy Link
+              <button className=" text-base bg-gray-700 px-2 py-1 rounded-md shrink-0">
+                <MdContentCopy />
               </button>
             </div>
             <div className="mt-4 border-b border-slate-600" ></div>

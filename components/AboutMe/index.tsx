@@ -5,9 +5,9 @@ import StackGraph from "./StackGraph"
 
 const index = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-10">
       <AboutStack />
-      <StackGraph />
+      {/* <StackGraph /> */}
       <AboutContext />
       <Formations />
     </div>

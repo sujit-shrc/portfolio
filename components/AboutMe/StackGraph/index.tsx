@@ -78,9 +78,9 @@ const index: React.FC = () => {
     },
   ];
   return (
-    <div className="flex w-full justify-evenly">
+    <div className="flex flex-col items-center lg:flex-row w-full justify-center lg:justify-evenly text-center">
       <div>
-        <h1>Tech Tools </h1>
+        <h1 className="text-2xl">Tech Tools </h1>
         <RadarChart outerRadius={90} width={500} height={250} data={tools}>
           <PolarGrid />
           <PolarAngleAxis dataKey="subject" />
@@ -91,7 +91,7 @@ const index: React.FC = () => {
         </RadarChart>
       </div>
       <div>
-        <h1>Dev. Libraries</h1>
+        <h1 className="text-2xl">Dev. Libraries</h1>
         <RadarChart outerRadius={90} width={500} height={250} data={dev}>
           <PolarGrid />
           <PolarAngleAxis dataKey="subject" />
