@@ -13,7 +13,7 @@ interface FormErrors {
   message: string;
 }
 
-const index: React.FC = () => {
+const Form: React.FC = () => {
   const initialFormData: FormData = {
     name: '',
     email: '',
@@ -135,4 +135,4 @@ const index: React.FC = () => {
   );
 };
 
-export default index;
+export default Form;

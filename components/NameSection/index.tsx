@@ -9,7 +9,6 @@ const TyperComponent: React.FC = () => {
   const [phase, setPhase] = useState<number>(-1);
   const name = 'Sujit';
   const surname = 'Kumar';
-  const phrases = ["A Glimpse into My Stack"];
 
   // Initial Delay to Start Typer
   useEffect(() => {
@@ -37,7 +36,7 @@ const TyperComponent: React.FC = () => {
           setNameIndex(nameIndex - 1);
           setSurnameIndex(surnameIndex - 1);
         }
-         if (nameIndex === 0 && surnameIndex === 0) {
+        if (nameIndex === 0 && surnameIndex === 0) {
           setTimeout(() => setPhase(2), 100);
         }
       }
@@ -47,6 +46,9 @@ const TyperComponent: React.FC = () => {
   }, [nameIndex, surnameIndex, phase, name.length, surname.length]);
 
   useEffect(() => {
+    // Moved phrases here
+    const phrases = ["A Glimpse into My Stack"];
+
     if (phase === 2) {
       const interval = setInterval(() => {
         const phraseToDisplay = phrases[0].slice(0, phraseText.length + 1);
@@ -59,8 +61,7 @@ const TyperComponent: React.FC = () => {
 
       return () => clearInterval(interval);
     }
-  }, [phase, phraseText, phrases]);
-
+  }, [phase, phraseText]);
 
   return (
     <div className="font-limelight text-center text-4xl lg:text-5xl font-semibold min-h-[calc(100vh-250px)] md:min-h-[calc(100vh-300px)] flex items-center p-4">

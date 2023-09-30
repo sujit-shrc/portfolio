@@ -19,7 +19,7 @@ const buttonOptions = [
   },
 ];
 
-const index: React.FC = () => {
+const Projects: React.FC = () => {
   const [selected, setSelected] = useState("");
 
   const handleButtonClick = (filter: string) => {
@@ -56,4 +56,4 @@ const index: React.FC = () => {
   );
 };
 
-export default index;
+export default Projects;

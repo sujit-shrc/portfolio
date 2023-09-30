@@ -10,7 +10,7 @@ interface Type {
   link: string;
 }
 
-const index: React.FC<Type> = ({
+const ProjectCard: React.FC<Type> = ({
   title,
   image,
   technologies,
@@ -69,4 +69,4 @@ const index: React.FC<Type> = ({
   );
 };
 
-export default index;
+export default ProjectCard;
