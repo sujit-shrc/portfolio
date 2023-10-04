@@ -3,81 +3,108 @@
 const Projects = (selected ?: string) => {
   const mock = [
     {
-      image: "url(https://img.freepik.com/free-photo/colorful-wallpaper-background-multicolored-generative-ai_91128-2257.jpg?w=996&t=st=1694528885~exp=1694529485~hmac=2035739a9919bdb15cc9d861768918f366c4ee63d9ffa629ffac0635c17bb5f5)",
-      title: "JavaScript",
-      filter: ["complex"],
-      technologies:["typescript","next","node"],
+      image: "url(./projects/time-picker.png))",
+      title: "Time Picker",
+      filter: ["frontend"],
+      technologies:["html","tailwind-css"],
       link:"#",
+      code: "https://github.com/mnamesujit/time-picker",
     },
     {
-      image: "url(https://img.freepik.com/free-photo/colorful-wallpaper-background-multicolored-generative-ai_91128-2257.jpg?w=996&t=st=1694528885~exp=1694529485~hmac=2035739a9919bdb15cc9d861768918f366c4ee63d9ffa629ffac0635c17bb5f5)",
-      title: "JavaScript",
+      image: "url(./projects/calculator.png)",
+      title: "Calculator",
       filter: ["frontend"],
-      technologies:["javascript","typescript","next"],
-      link:"#"
+      technologies:["html","css","javascript"],
+      link:"https://mnamesujit.github.io/calculator/",
+      code: "https://github.com/mnamesujit/Calculator",
+    },
+    {
+      image: "url(./projects/todo-app)",
+      title: "Modern Todo App",
+      filter: ["frontend"],
+      technologies:["javascript","redux","scss","local-storage"],
+      link:"https://modern-react-todo-app.netlify.app/",
+      code: "https://github.com/mnamesujit/modern-todo-app",
+    },
+    {
+      image: "url(./projects/tribute-page.png)",
+      title: "Tribute to Mahi",
+      filter: ["frontend"],
+      technologies:["html", "css"],
+      link:"https://mnamesujit.github.io/tribute-page/",
+      code: "https://github.com/mnamesujit/tribute-page",
+    },
+    {
+      image: "url(./projects/safe-your-web-clone.png)",
+      title: "Safe Your Web Clone",
+      filter: ["frontend"],
+      technologies:["react", "typescript", "scss"],
+      link:"https://safeyourweb.netlify.app/",
+      code: "https://github.com/mnamesujit/safe-your-web-clone",
+    },
+    {
+      image: "url(./projects/dev-to.png)",
+      title: "dev.to Clone",
+      filter: ["frontend"],
+      technologies:["react", "scss", "dev.to api"],
+      link:"https://mnamesujit-devto.netlify.app/",
+      code: "https://github.com/mnamesujit/dev-to-clone",
     },
     {
       image: "url(https://img.freepik.com/free-photo/working-office-desk-with-modern-technology-generated-by-ai_188544-17029.jpg?t=st=1694529192~exp=1694532792~hmac=5aafac384923ac56daf0af34201fddf8ed77abf5d835b24fda3eea73a3551456&w=996)",
-      title: "JavaScript",
+      title: "URL Shortner",
       filter: ["backend"],
-      technologies:["javascript"],
-      link:"#"
+      technologies:["express.js","mongodb", "ejs"],
+      link:"#",
+      code: "https://github.com/mnamesujit/url-shortner",
     },
     {
-      image: "url(https://img.freepik.com/free-photo/working-office-desk-with-modern-technology-generated-by-ai_188544-17029.jpg?t=st=1694529192~exp=1694532792~hmac=5aafac384923ac56daf0af34201fddf8ed77abf5d835b24fda3eea73a3551456&w=996)",
-      title: "JavaScript",
-      filter: ["next"],
-      technologies:["next"],
-      link:"#"
-    },
-    {
-      image: "url(https://img.freepik.com/free-photo/working-office-desk-with-modern-technology-generated-by-ai_188544-17029.jpg?t=st=1694529192~exp=1694532792~hmac=5aafac384923ac56daf0af34201fddf8ed77abf5d835b24fda3eea73a3551456&w=996)",
-      title: "JavaScript",
-      filter: ["react"],
-      technologies:["react"],
-      link:"#"
-    },
-    {
-      image: "url(https://img.freepik.com/free-photo/working-office-desk-with-modern-technology-generated-by-ai_188544-17029.jpg?t=st=1694529192~exp=1694532792~hmac=5aafac384923ac56daf0af34201fddf8ed77abf5d835b24fda3eea73a3551456&w=996)",
-      title: "JavaScript",
+      image: "url(./projects/pass-gen.png)",
+      title: "Password Generator",
       filter: ["frontend"],
-      technologies:["javascript"],
-      link:"#"
+      technologies:["typescript-react","tailwind-css"],
+      link:"https://test.nucleus-dev.me/",
+      code: "https://github.com/mnamesujit/pass-gen",
+    },
+    {
+      image: "url(./projects/dev-finder.png)",
+      title: "dev finder",
+      filter: ["frontend"],
+      technologies:["html","css","js", "github-api"],
+      link:"https://mnamesujit.github.io/github_dev_finder/",
+      code: "https://github.com/mnamesujit/github_dev_finder",
     },
     {
       image: "url(https://img.freepik.com/free-photo/working-office-desk-with-modern-technology-generated-by-ai_188544-17029.jpg?t=st=1694529192~exp=1694532792~hmac=5aafac384923ac56daf0af34201fddf8ed77abf5d835b24fda3eea73a3551456&w=996)",
-      title: "JavaScript",
-      filter: ["complex"],
-      technologies:["html","css"],
-      link:"#"
-    },
-    {
-      image: "url(https://img.freepik.com/free-photo/working-office-desk-with-modern-technology-generated-by-ai_188544-17029.jpg?t=st=1694529192~exp=1694532792~hmac=5aafac384923ac56daf0af34201fddf8ed77abf5d835b24fda3eea73a3551456&w=996)",
-      title: "JavaScript",
-      filter: ["complex"],
-      technologies:["javascript","next"],
-      link:"#"
-    },
-    {
-      image: "url(https://img.freepik.com/free-photo/working-office-desk-with-modern-technology-generated-by-ai_188544-17029.jpg?t=st=1694529192~exp=1694532792~hmac=5aafac384923ac56daf0af34201fddf8ed77abf5d835b24fda3eea73a3551456&w=996)",
-      title: "JavaScript",
+      title: "prosecdevs-backend",
       filter: ["backend","complex"],
-      technologies:["javascript","git","next"],
-      link:"#"
+      technologies:["expressjs","mariadb"],
+      link:"#",
+      code: "https://github.com/mnamesujit/Proesec-dev-b",
     },
     {
       image: "url(https://img.freepik.com/free-photo/working-office-desk-with-modern-technology-generated-by-ai_188544-17029.jpg?t=st=1694529192~exp=1694532792~hmac=5aafac384923ac56daf0af34201fddf8ed77abf5d835b24fda3eea73a3551456&w=996)",
-      title: "JavaScript",
-      filter: ["complex"],
-      technologies:["react","typescript","html","css"],
-      link:"#"
+      title: "prosecdevs.com",
+      filter: ["frontend","backend"],
+      technologies:["typescript-react","tailwind-css","framer-motion"],
+      link:"https://prosecdevs.com",
+      code: "https://github.com/mnamesujit/prosecdevs",
     },
     {
       image: "url(https://img.freepik.com/free-photo/working-office-desk-with-modern-technology-generated-by-ai_188544-17029.jpg?t=st=1694529192~exp=1694532792~hmac=5aafac384923ac56daf0af34201fddf8ed77abf5d835b24fda3eea73a3551456&w=996)",
-      title: "JavaScript",
-      filter: ["frontend","complex"],
-      technologies:["javascript","react","git"],
-      link:""
+      title: "safeyourweb.com",
+      filter: ["frontend","backend"],
+      technologies:["typescript-react","tailwind-css","framer-motion"],
+      link:"https://safeyourweb.com",
+      code: "https://github.com/mnamesujit/safe-your-web",
+    },
+    {
+      image: "url(https://img.freepik.com/free-photo/working-office-desk-with-modern-technology-generated-by-ai_188544-17029.jpg?t=st=1694529192~exp=1694532792~hmac=5aafac384923ac56daf0af34201fddf8ed77abf5d835b24fda3eea73a3551456&w=996)",
+      title: "portfolio",
+      filter: ["frontend","backend", "complex"],
+      technologies:["nextjs","tailwind-css","recharts"],
+      link:"#",
+      code: "https://github.com/mnamesujit/nucleus.dev",
     },
   ];
   return selected
