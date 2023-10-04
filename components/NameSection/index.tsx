@@ -65,7 +65,7 @@ const TyperComponent: React.FC = () => {
 
   return (
     <div className="font-limelight text-center text-3xl md:text-4xl lg:text-5xl font-semibold min-h-[calc(100vh-250px)] md:min-h-[calc(100vh-300px)] flex items-center p-4">
-      <span className='text-6xl'>
+      <span className='text-4xl sm:text-6xl'>
         {name.substring(0, nameIndex)}&nbsp;{surname.substring(0, surnameIndex)}
       </span>
       {phase === 2 && (

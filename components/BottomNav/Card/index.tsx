@@ -9,9 +9,9 @@ interface Props{
 
 const Card: React.FC<Props> = ({ href, title, description }) => {
   return (
-    <div className="group h-40 flex items-center justify-center rounded-lg border border-gray-300 dark:border-neutral-800 px-4 py-4 transition-colors hover:border-gray-500 dark:hover:border-gray-500">
+    <div className="group h-[10.5rem] md:h-40 flex items-center justify-center rounded-lg border border-gray-300 dark:border-neutral-800 px-4 py-4 transition-colors hover:border-gray-500 dark:hover:border-gray-500">
     <Link href={href}>
-        <h2 className="mb-3 text-2xl font-semibold">
+        <h2 className="mb-2 text-2xl lg:text-[1.7rem] font-semibold">
           {title}{' '}
           <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             -&gt;
