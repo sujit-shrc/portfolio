@@ -9,7 +9,7 @@ interface Props{
 
 const Card: React.FC<Props> = ({ href, title, description }) => {
   return (
-    <div className="group h-40 flex items-center justify-center rounded-lg border border-gray-300 dark:border-neutral-800 px-5 py-4 transition-colors hover:border-gray-500 dark:hover:border-gray-500">
+    <div className="group h-40 flex items-center justify-center rounded-lg border border-gray-300 dark:border-neutral-800 px-4 py-4 transition-colors hover:border-gray-500 dark:hover:border-gray-500">
     <Link href={href}>
         <h2 className="mb-3 text-2xl font-semibold">
           {title}{' '}
@@ -17,7 +17,7 @@ const Card: React.FC<Props> = ({ href, title, description }) => {
             -&gt;
           </span>
         </h2>
-        <p className="m-0 max-w-[30ch] text-sm opacity-50">{description}</p>
+        <p className="m-0 md:max-w-[30ch] text-sm opacity-50">{description}</p>
     </Link>
   </div>
   )
