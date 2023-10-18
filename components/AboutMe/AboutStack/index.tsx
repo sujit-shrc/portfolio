@@ -10,62 +10,62 @@ import { BiLogoMongodb } from "react-icons/bi"
 const index: React.FC = () => {
   const skills = [
     {
-      icon: <SiJavascript size="60" />,
+      icon: <SiJavascript className="text-5xl md:text-6xl" />,
       href: 'https://javascript.org/',
       title: 'JavaScript',
     },
     {
-      icon: <SiTypescript size="60" />,
+      icon: <SiTypescript className="text-5xl md:text-6xl" />,
       href: 'https://typescript.org/',
       title: 'TypeScript',
     },
     {
-      icon: <FaPython size="60" />,
+      icon: <FaPython className="text-5xl md:text-6xl" />,
       href: 'https://www.python.org/',
       title: 'Python',
     },
     {
-      icon: <RiReactjsFill size="60" />,
+      icon: <RiReactjsFill className="text-5xl md:text-6xl" />,
       href: 'https://nodejs.org/',
       title: 'Node.Js',
     },
     {
-      icon: <SiNextdotjs size="60" />,
+      icon: <SiNextdotjs className="text-5xl md:text-6xl" />,
       href: 'https://nextjs.org/',
       title: 'Next.Js',
     },
     {
-      icon: <IoLogoNodejs size="60" />,
+      icon: <IoLogoNodejs className="text-5xl md:text-6xl" />,
       href: 'https://nodejs.org/',
       title: 'NodeJs',
     },
     {
-      icon: <SiExpress size="60" />,
+      icon: <SiExpress className="text-5xl md:text-6xl" />,
       href: 'https://expressjs.org',
       title: 'ExpressJs',
     },
     {
-      icon: <SiMariadb size="60" />,
+      icon: <SiMariadb className="text-5xl md:text-6xl" />,
       href: 'https://mariadb.org',
       title: 'MariaDB',
     },
     {
-      icon: <BiLogoMongodb size="60" />,
+      icon: <BiLogoMongodb className="text-5xl md:text-6xl" />,
       href: 'https://mongodb.org',
       title: 'MongoDb',
     },
     {
-      icon: <FaGitAlt size="60" />,
+      icon: <FaGitAlt className="text-5xl md:text-6xl" />,
       href: 'https://git.org',
       title: 'Git',
     },
     {
-      icon: <SiLinux size="60" />,
+      icon: <SiLinux className="text-5xl md:text-6xl" />,
       href: 'https://archilinux.org',
       title: 'Linux',
     },
     {
-      icon: <PiGithubLogoFill size="60" />,
+      icon: <PiGithubLogoFill className="text-5xl md:text-6xl" />,
       href: 'https://github.com',
       title: 'Github',
     },

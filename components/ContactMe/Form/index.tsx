@@ -76,7 +76,7 @@ const Form: React.FC = () => {
     ) : (
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label className="block text-sm font-medium">Name</label>
+          <label className="block text-sm md:text-base font-semibold">Name</label>
           <input
             type="text"
             name="name"
@@ -92,7 +92,7 @@ const Form: React.FC = () => {
           )}
         </div>
         <div className="mb-4">
-          <label className="block text-sm font-medium">Email</label>
+          <label className="block text-sm md:text-base font-semibold">Email</label>
           <input
             type="text"
             name="email"
@@ -108,7 +108,7 @@ const Form: React.FC = () => {
           )}
         </div>
         <div className="mb-4">
-          <label className="block text-sm font-medium">Message</label>
+          <label className="block text-sm md:text-base font-semibold">Message</label>
           <textarea
             name="message"
             rows={3}
@@ -125,7 +125,7 @@ const Form: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="bg-slate-400 text-black px-4 py-2 rounded hover:bg-slate-400 transition-colors duration-300 w-full md:w-auto"
+          className="bg-slate-200 text-black text-semibold px-4 py-2 rounded hover:bg-slate-400 transition-colors duration-300 w-full md:w-auto"
         >
           Send Message
         </button>
