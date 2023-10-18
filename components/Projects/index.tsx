@@ -15,7 +15,7 @@ const buttonOptions = [
   },
   {
     filter: "complex",
-    label: "More Complex",
+    label: "Complex",
   },
 ];
 

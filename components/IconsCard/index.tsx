@@ -8,7 +8,7 @@ interface IconProp{
 
 const index: React.FC<IconProp> = ({icon, href, title}) => {
     return (
-        <div className="bg-slate-200 hover:bg-slate-400 rounded-lg px-8 py-6 text-slate-800">
+        <div className="bg-slate-200 hover:bg-slate-400 rounded-lg px-6 py-4 text-slate-800">
           <Link href={href}>
             {icon}
             {/* {title} */}

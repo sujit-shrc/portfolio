@@ -53,18 +53,18 @@ const index: React.FC = () => {
           </ul>
         </div>
         <div className="">
-          <div className="w-fit p-4 md:p-6 rounded-md border border-slate-600">
+          <div className="w-fit p-5 rounded-md border border-slate-600">
             <div className="space-y-1">
               <h1 className="text-xl text-semibold">Refer my resume</h1>
               <p className="text-gray-500">Anyone with the link can view this document.</p>
             </div>
-            <div className="w-100 flex space-x-1 md:space-x-3">
+            <div className="w-100 mt-1 flex space-x-1 md:space-x-3">
               <input
                 value="https://gdrive.com/Xfkek4dsd34se33sd3sl3sd4322990%dsk/myresume.pdf"
                 readOnly
-                className="w-full px-2 py-1 bg-gray-700 rounded-md outline-none"
+                className="w-full px-2 py-1 bg-slate-800 rounded-md outline-none border border-slate-700"
               />
-              <button className=" text-base bg-gray-700 px-2 py-1 rounded-md shrink-0">
+              <button className=" text-base bg-slate-800 px-2 py-1 rounded-md shrink-0">
                 <MdContentCopy />
               </button>
             </div>
