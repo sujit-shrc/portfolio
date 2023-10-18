@@ -34,14 +34,14 @@ const Projects: React.FC = () => {
             key={option.filter}
             className={`mr-2 ${
               selected === option.filter ? "bg-slate-200 text-black" : "border"
-            } px-4 py-2 rounded`}
+            } px-2 md:px-4 py-2 rounded`}
             onClick={() => handleButtonClick(option.filter)}
           >
             {option.label}
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 w-100">
         {Mock(selected).map((item, key) => (
           <ImageCard
             link={item.link}

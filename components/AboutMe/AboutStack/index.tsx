@@ -71,7 +71,7 @@ const index: React.FC = () => {
     },
   ]
   return (
-    <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+    <div className="flex flex-wrap justify-evenly gap-5 md:gap-8">
       {skills.map((data: { icon: React.ReactNode; title: string; href: string }, index: number) => (
         <IconsCard key={index} {...data} />
       ))}

@@ -1,7 +1,9 @@
 import {useState} from "react";
 import Link from "next/link";
-import { FaReact, FaGithub, FaHtml5, FaCss3, FaWordpress, FaJsSquare, FaFigma, FaNode } from "react-icons/fa";
-import { SiNextdotjs, SiNestjs, SiTypescript } from "react-icons/si";
+import { FaReact, FaGithub, FaHtml5, FaCss3, FaJsSquare, FaFigma, FaNode } from "react-icons/fa";
+import { SiNextdotjs, SiNestjs, SiTypescript,SiTailwindcss, SiExpress, SiMongodb, SiMariadb } from "react-icons/si";
+import { TbBrandRedux, TbBrandSass, TbBrandNextjs } from 'react-icons/tb';
+import { TiChartArea } from 'react-icons/ti';
 
 interface Type {
   title: string;
@@ -29,6 +31,16 @@ const ProjectCard: React.FC<Type> = ({
     { name: "next", icon: <SiNextdotjs size={30} /> },
     { name: "html", icon: <FaHtml5 size={30} /> },
     { name: "css", icon: <FaCss3 size={30} /> },
+    { name: "nodejs", icon: <FaNode size={30} /> },
+    { name: "tailwind-css", icon: <SiTailwindcss size={30} /> },
+    { name: "redux", icon: <TbBrandRedux size={30} /> },
+    { name: "scss", icon: <TbBrandSass size={30} /> },
+    { name: "express", icon: <SiExpress size={30} /> },
+    { name: "mongodb", icon: <SiMongodb size={30} /> },
+    { name: "mariadb", icon: <SiMariadb size={30} /> },
+    { name: "nextjs", icon: <TbBrandNextjs size={30} /> },
+    { name: "recharts", icon: <TiChartArea size={30} /> },
+
   ];
   
 
@@ -42,11 +54,11 @@ const ProjectCard: React.FC<Type> = ({
 
   return (
     <Link href={link} target="_blank">
-      <div className="relative overflow-hidden bg-cover bg-center w-80 h-44 m-2" style={{ backgroundImage: image }}
+      <div className="relative overflow-hidden bg-cover bg-center w-72 md:w-80 h-44" style={{ backgroundImage: image }}
        onMouseEnter={handleMouseEnter}
        onMouseLeave={handleMouseLeave}
       >
-        <div  className={`absolute bottom-0 w-full py-1 text-white bg-slate-900 bg-opacity-50 transition-all duration-500 ease ${
+        <div className={`absolute bottom-0 w-full py-1 text-white bg-slate-900 bg-opacity-50 transition-all duration-500 ease ${
             hovered ? "bottom-9 bg-opacity-80" : "bottom-0"
           }`}>
           <span className="text-[22px] mx-1.5">{title}</span>
@@ -56,7 +68,7 @@ const ProjectCard: React.FC<Type> = ({
           }`}>
           {techStackIcons.map((item:{name: string, icon: React.ReactNode}, key: number) =>
             technologies.includes(item.name) ? (
-              <div key={key} className="inline-block mx-1.5 py-1">
+              <div key={key} className="inline-block mx-1.5 py-1 text-black">
                 {item.icon}
               </div>
             ) : (
