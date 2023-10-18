@@ -54,7 +54,7 @@ const ProjectCard: React.FC<Type> = ({
 
   return (
     <Link href={link} target="_blank">
-      <div className="relative overflow-hidden bg-cover bg-center w-72 md:w-80 h-44" style={{ backgroundImage: image }}
+      <div className="relative overflow-hidden bg-cover bg-center w-full md:w-80 h-44" style={{ backgroundImage: image }}
        onMouseEnter={handleMouseEnter}
        onMouseLeave={handleMouseLeave}
       >
