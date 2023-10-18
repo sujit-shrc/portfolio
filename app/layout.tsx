@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     url: "https://github.com/mnamesujit",
     phoneNumbers: "+919305083852",
     locale: "en_IN",
-    images: "/profile.jpg",
+    images: "https://nucleus-neon.vercel.app/profile.jpg",
   },
   authors: [{ name: "Sujit Kumar" }],
   keywords: [
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     creator: "Sujit Kumar",
     creatorId: "@mnamesujit",
     site: "https://github.com/mnamesujit",
-    images: "/profile.jpg",
+    images: "https://nucleus-neon.vercel.app/profile.jpg",
   },
 }
 

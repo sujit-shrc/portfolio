@@ -6,7 +6,7 @@ import ImageCard from "./ImageCard";
 
 const buttonOptions = [
   {
-    filter: "fronted",
+    filter: "frontend",
     label: "Front-End",
   },
   {
