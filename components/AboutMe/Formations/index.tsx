@@ -43,7 +43,7 @@ const index: React.FC = () => {
   return (
     <div className="">
       <h1 className="text-3xl font-bold mb-4 text-center">Formations and courses</h1>
-      <div className="flex flex-col lg:gap-4 pt-6 lg:px-10 md:flex-row items-center justify-center md:justify-evenly">
+      <div className="flex flex-col lg:gap-4 pt-6 lg:px-10 md:flex-row sm:items-center justify-center md:justify-evenly">
         <div className="flex flex-col gap-3 space-y-1">
           <h2 className="text-3xl font-semibold mb-2">Education</h2>
           <ul>
@@ -52,8 +52,7 @@ const index: React.FC = () => {
             ))}
           </ul>
         </div>
-        <div className="">
-          <div className="w-fit p-5 rounded-md border border-slate-600">
+          <div className="w-full md:w-fit p-5 rounded-md border border-slate-600">
             <div className="space-y-1">
               <h1 className="text-xl text-semibold">Refer my resume</h1>
               <p className="text-gray-500">Anyone with the link can view this document.</p>
@@ -68,7 +67,7 @@ const index: React.FC = () => {
                 <MdContentCopy />
               </button>
             </div>
-            <div className="mt-4 border-b border-slate-600" ></div>
+            <div className="mt-4 border-b border-slate-600"></div>
             <div className="mt-4 space-y-2">
               <h2>People with access</h2>
               <ul>
@@ -77,7 +76,6 @@ const index: React.FC = () => {
                 ))}
               </ul>
             </div>
-          </div>
         </div>
       </div>
     </div>
