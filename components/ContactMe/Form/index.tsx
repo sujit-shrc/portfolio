@@ -72,7 +72,7 @@ const Form: React.FC = () => {
   return (
     <div className="w-full md:w-[500px] mx-auto border border-slate-200 rounded shadow-md p-3 md:p-5">
     {submitted ? (
-      <p className="mt-4 text-green-600">Message sent successfully!</p>
+      <p className="text-green-600">Message sent successfully!</p>
     ) : (
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
