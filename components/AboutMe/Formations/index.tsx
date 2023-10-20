@@ -1,9 +1,11 @@
+"use client"
 import Education from "./Formation";
 import Courses from "./Courses";
 import { FaGraduationCap } from "react-icons/fa";
 import { MdContentCopy } from "react-icons/md"
 
 const index: React.FC = () => {
+  const resumeURl = "https://gdrive.com/Xfkek4dsd34se33sd3sl3sd4322990%dsk/myresume.pdf"
   const education = [
     {
       degree: "Master of Computer Application",
@@ -40,6 +42,15 @@ const index: React.FC = () => {
     },
   ];
 
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(resumeURl);
+      alert("copied to clipboard")
+    } catch (err) {
+      console.error('Unable to copy to clipboard', err);
+    }
+  };
+
   return (
     <div className="">
       <h1 className="text-3xl font-bold mb-4 text-center">Formations and courses</h1>
@@ -63,7 +74,7 @@ const index: React.FC = () => {
                 readOnly
                 className="w-full px-2 py-1 bg-slate-800 rounded-md outline-none border border-slate-700"
               />
-              <button className=" text-base bg-slate-800 px-2 py-1 rounded-md shrink-0">
+              <button className=" text-base bg-slate-800 focus:bg-green-400 px-2 py-1 rounded-md shrink-0" onClick={copyToClipboard}>
                 <MdContentCopy />
               </button>
             </div>
