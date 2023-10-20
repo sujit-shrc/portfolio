@@ -5,7 +5,7 @@ import { FaGraduationCap } from "react-icons/fa";
 import { MdContentCopy } from "react-icons/md"
 
 const index: React.FC = () => {
-  const resumeURl = "https://gdrive.com/Xfkek4dsd34se33sd3sl3sd4322990%dsk/myresume.pdf"
+  const resumeURl = "https://drive.google.com/file/d/1BCwctarESyC_r3ICEqzZNGbMtBPHRnfu/view?usp=drivesdk"
   const education = [
     {
       degree: "Master of Computer Application",
@@ -45,7 +45,6 @@ const index: React.FC = () => {
   const copyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(resumeURl);
-      alert("copied to clipboard")
     } catch (err) {
       console.error('Unable to copy to clipboard', err);
     }
@@ -70,7 +69,7 @@ const index: React.FC = () => {
             </div>
             <div className="w-100 mt-1 flex space-x-1 md:space-x-3">
               <input
-                value="https://gdrive.com/Xfkek4dsd34se33sd3sl3sd4322990%dsk/myresume.pdf"
+                value="https://drive.google.com/file/d/1BCwctarESyC_r3ICEqzZNGbMtBPHRnfu/view?usp=drivesdk"
                 readOnly
                 className="w-full px-2 py-1 bg-slate-800 rounded-md outline-none border border-slate-700"
               />

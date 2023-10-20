@@ -1,5 +1,6 @@
 import Projects from "@/components/Projects";
 import data from "../../locales/data.json";
+import Footer from "@/components/Footer";
 
 const page: React.FC = () => {
   const local = data.projects_page;
@@ -10,6 +11,7 @@ const page: React.FC = () => {
         <p className="text-2xl">{local.description}</p>
       </div>
       <Projects />
+      <Footer />
     </div>
   );
 };

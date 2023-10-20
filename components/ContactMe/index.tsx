@@ -15,37 +15,37 @@ const index: React.FC = () => {
   const social = [
     {
       icon: <PiGithubLogoFill size="40" />,
-      href: "https://github.com",
+      href: "https://github.com/mnamesujit",
       title: "Github",
     },
     {
       icon: <RiLinkedinFill size="40" />,
-      href: "https://linked.in/",
+      href: "https://www.linkedin.com/in/mnamesujit",
       title: "Linkedin",
     },
     {
       icon: <PiDevToLogoFill size="40" />,
-      href: "https://www.devto.com/",
+      href: "https://dev.to/mnamesujit",
       title: "Dev.To",
     },
     {
       icon: <MdEmail size="40" />,
-      href: "mail-to:mnamesujit@gmail.com",
+      href: "mailto:mnamesujit@gmail.com",
       title: "Email",
     },
     {
       icon: <RiInstagramFill size="40" />,
-      href: "https://instagram.com/",
+      href: "https://instagram.com/nucleus.me",
       title: "Instagram",
     },
     {
       icon: <PiTwitterLogoFill size="40" />,
-      href: "https://twitter.com/",
+      href: "https://twitter.com/mnamesujit",
       title: "Twitter",
     },
     {
       icon: <PiGitlabLogoSimpleFill size="40" />,
-      href: "https://gitlab.com",
+      href: "https://gitlab.com/mnamesujit",
       title: "Gitlab",
     },
   ];
