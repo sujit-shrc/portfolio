@@ -9,17 +9,17 @@ import ScanMe from "../ScanMe";
 import Link from "next/link";
 
 const socialLinks = [
-  { href: "#", icon: <ImGithub size={30} className="" /> },
+  { href: "https://github.com/mnamesujit", icon: <ImGithub size={30} className="" /> },
   {
-    href: "#",
+    href: "https://www.linkedin.com/in/mnamesujit",
     icon: <FaLinkedinIn size={30} className="" />,
   },
   {
     href: "#",
     icon: <PiInstagramLogoFill size={30} className="" />,
   },
-  { href: "#", icon: <GrTwitter size={30} className="" /> },
-  { href: "#", icon: <FaFilePdf size={28} className="" /> },
+  { href: "https://twitter.com/mnamesujit", icon: <GrTwitter size={30} className="" /> },
+  { href: "/sujit-kumar.pdf", icon: <FaFilePdf size={28} className="" download = "sujit-kumar.pdf" /> },
 ];
 
 const Header: React.FC = () => {

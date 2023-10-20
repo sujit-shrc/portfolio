@@ -11,12 +11,12 @@ const index: React.FC = () => {
   const skills = [
     {
       icon: <SiJavascript className="text-5xl md:text-6xl" />,
-      href: 'https://javascript.org/',
+      href: 'https://www.javascript.com/',
       title: 'JavaScript',
     },
     {
       icon: <SiTypescript className="text-5xl md:text-6xl" />,
-      href: 'https://typescript.org/',
+      href: 'https://www.typescriptlang.org/',
       title: 'TypeScript',
     },
     {
@@ -41,27 +41,27 @@ const index: React.FC = () => {
     },
     {
       icon: <SiExpress className="text-5xl md:text-6xl" />,
-      href: 'https://expressjs.org',
+      href: 'https://expressjs.com/',
       title: 'ExpressJs',
     },
     {
       icon: <SiMariadb className="text-5xl md:text-6xl" />,
-      href: 'https://mariadb.org',
+      href: 'https://mariadb.org/',
       title: 'MariaDB',
     },
     {
       icon: <BiLogoMongodb className="text-5xl md:text-6xl" />,
-      href: 'https://mongodb.org',
+      href: 'https://www.mongodb.com/',
       title: 'MongoDb',
     },
     {
       icon: <FaGitAlt className="text-5xl md:text-6xl" />,
-      href: 'https://git.org',
+      href: 'https://git-scm.com/',
       title: 'Git',
     },
     {
       icon: <SiLinux className="text-5xl md:text-6xl" />,
-      href: 'https://archilinux.org',
+      href: 'https://archlinux.org/',
       title: 'Linux',
     },
     {
