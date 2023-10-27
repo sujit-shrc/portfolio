@@ -71,9 +71,9 @@ const index: React.FC = () => {
               <input
                 value="https://drive.google.com/file/d/1BCwctarESyC_r3ICEqzZNGbMtBPHRnfu/view?usp=drivesdk"
                 readOnly
-                className="w-full px-2 py-1 bg-slate-800 rounded-md outline-none border border-slate-700"
+                className="w-full px-2 py-1 bg-transparent dark:bg-slate-800 rounded-md outline-none border border-slate-700"
               />
-              <button className=" text-base bg-slate-800 focus:bg-green-400 px-2 py-1 rounded-md shrink-0" onClick={copyToClipboard}>
+              <button className=" text-base bg-transparent dark:bg-slate-800 focus:bg-green-400 px-2 py-1 border border-slate-800 rounded-md shrink-0" onClick={copyToClipboard}>
                 <MdContentCopy />
               </button>
             </div>
