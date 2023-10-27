@@ -7,7 +7,7 @@ const index = () => {
   return (
     <div className="flex flex-col gap-10">
       <AboutStack />
-      {/* <StackGraph /> */}
+      <StackGraph />
       <AboutContext />
       <Formations />
     </div>
