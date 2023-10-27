@@ -1,5 +1,5 @@
 "use client";
-
+import { useEffect, useState } from 'react';
 import {
   Legend,
   PolarAngleAxis,
@@ -9,7 +9,8 @@ import {
   RadarChart
 } from 'recharts';
 
-const index: React.FC = () => {
+const Index: React.FC = () => {
+  const [chartWidth, setChartWidth] = useState(0);
   const tools = [
     { subject: 'Linux', A: 135, B: 130, fullMark: 150 },
     { subject: 'NGINX, Deployment', A: 86, B: 130, fullMark: 150 },
@@ -27,27 +28,40 @@ const index: React.FC = () => {
     { subject: 'Styled-Comp.', A: 105, fullMark: 150 },
   ];
 
-  const getChartWidth = () => {
-    const breakpoints = { sm: 300, md: 500, lg: 700 };
-    const screenWidth = window.innerWidth;
+  useEffect(() => {
+    const updateChartWidth = () => {
+      const breakpoints = { sm: 300, md: 500, lg: 700 };
+      const screenWidth = window.innerWidth;
 
-    if (screenWidth < breakpoints.sm) {
-      return screenWidth - 20;
-    } else if (screenWidth < breakpoints.md) {
-      return breakpoints.sm;
-    } else if (screenWidth < breakpoints.lg) {
-      return screenWidth * 0.6;
-    } else {
-      return screenWidth * 0.4;
-    }
-  };
+      if (screenWidth < breakpoints.sm) {
+        setChartWidth(screenWidth - 20);
+      } else if (screenWidth < breakpoints.md) {
+        setChartWidth(breakpoints.sm);
+      } else if (screenWidth < breakpoints.lg) {
+        setChartWidth(screenWidth * 0.6);
+      } else {
+        setChartWidth(screenWidth * 0.4);
+      }
+    };
+
+    // Initial update
+    updateChartWidth();
+
+    // Update on window resize
+    window.addEventListener('resize', updateChartWidth);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener('resize', updateChartWidth);
+    };
+  }, []);
 
   return (
-    <div className="flex flex-col md:flex-row md:justify-center md:gap-2 items-center w-full text-center overflow-hidden">
+    <div className="flex flex-col md:flex-row md:justify-around md:gap-2 items-center w-full text-center">
       <div className="mb-8 w-full md:w-3/5 lg:w-1/2">
         <h1 className="text-2xl">Tech Tools </h1>
         <div className="w-full mx-auto">
-          <RadarChart outerRadius={90} width={getChartWidth()} height={250} data={tools}>
+          <RadarChart outerRadius={90} width={chartWidth} height={250} data={tools}>
             <PolarGrid />
             <PolarAngleAxis dataKey="subject" />
             <PolarRadiusAxis angle={30} domain={[0, 150]} />
@@ -60,7 +74,7 @@ const index: React.FC = () => {
       <div className="w-full mb-8 md:w-3/5 lg:w-1/2">
         <h1 className="text-2xl">Dev. Libraries</h1>
         <div className="w-full mx-auto">
-          <RadarChart outerRadius={90} width={getChartWidth()} height={250} data={dev}>
+          <RadarChart outerRadius={90} width={chartWidth} height={250} data={dev}>
             <PolarGrid />
             <PolarAngleAxis dataKey="subject" />
             <PolarRadiusAxis angle={30} domain={[0, 150]} />
@@ -79,4 +93,4 @@ const index: React.FC = () => {
   );
 };
 
-export default index;
+export default Index;
