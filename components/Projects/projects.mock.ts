@@ -46,7 +46,7 @@ const Projects = (selected ?: string) => {
       image: "url(projects/admin-dashboard.png)",
       title: "Admin Dashboard",
       filter: ["frontend","backend", "complex"],
-      technologies:["reactjs","material-ui","recharts","mariadb","expressjs"],
+      technologies:["react","mui","recharts","mariadb","express"],
       link:"https://github.com/mnamesujit/fullstack-dev-challenge/tree/main/frontend",
       code: "https://github.com/mnamesujit/fullstack-dev-challenge/tree/main/frontend",
     },
@@ -91,11 +91,11 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/safe-your-web-clone",
     },
     {
-      image: "url(https://img.freepik.com/free-photo/working-office-desk-with-modern-technology-generated-by-ai_188544-17029.jpg?t=st=1694529192~exp=1694532792~hmac=5aafac384923ac56daf0af34201fddf8ed77abf5d835b24fda3eea73a3551456&w=996)",
+      image: "url(./projects/url-shortner.png)",
       title: "URL Shortner",
       filter: ["backend"],
       technologies:["express","mongodb", "ejs"],
-      link:"#",
+      link:"https://github.com/mnamesujit/url-shortner",
       code: "https://github.com/mnamesujit/url-shortner",
     },
     {

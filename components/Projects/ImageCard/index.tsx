@@ -1,7 +1,7 @@
 import {useState} from "react";
 import Link from "next/link";
 import { FaReact, FaGithub, FaHtml5, FaCss3, FaJsSquare, FaFigma, FaNode } from "react-icons/fa";
-import { SiNextdotjs, SiNestjs, SiTypescript,SiTailwindcss, SiExpress, SiMongodb, SiMariadb } from "react-icons/si";
+import { SiNextdotjs, SiNestjs, SiTypescript,SiTailwindcss, SiExpress, SiMongodb, SiMariadb, SiMui } from "react-icons/si";
 import { TbBrandRedux, TbBrandSass, TbBrandNextjs } from 'react-icons/tb';
 import { TiChartArea } from 'react-icons/ti';
 
@@ -40,6 +40,7 @@ const ProjectCard: React.FC<Type> = ({
     { name: "mariadb", icon: <SiMariadb size={30} /> },
     { name: "nextjs", icon: <TbBrandNextjs size={30} /> },
     { name: "recharts", icon: <TiChartArea size={30} /> },
+    { name: "mui", icon: <SiMui size={30} /> },
 
   ];
   
