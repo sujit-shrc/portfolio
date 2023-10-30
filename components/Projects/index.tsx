@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-100">
       <div className="flex flex-wrap mb-4">
         {buttonOptions.map((option) => (
           <button

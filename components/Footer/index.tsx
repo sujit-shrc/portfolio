@@ -1,45 +1,49 @@
-// components/Footer.tsx
+import Link from 'next/link';
 
-import React from 'react';
-
-interface Link {
+interface LinkProps {
   title: string;
   href: string;
 }
 
-const linksColumn1: Link[] = [
-  { title: 'Menu', href: '#' },
-  { title: 'Contact-Me', href: '#' },
-  { title: 'About-Me', href: '#' },
-  { title: 'My-Contributions', href: '#' },
-];
-
-const linksColumn2: Link[] = [
-  { title: 'Privacy Terms', href: '#' },
-  { title: 'Privacy Conditions', href: '#' },
-  { title: 'Give Your Feedback', href: '#' },
-  { title: 'This Project on Github', href: '#' },
-];
-
 const Footer: React.FC = () => {
+  const linksColumn1: LinkProps[] = [
+    { title: 'Home', href: '#' },
+    { title: 'About-Me', href: '#' },
+    { title: 'Contact-Me', href: '#' },
+    { title: 'My-Contributions', href: '#' },
+  ];
+  
+  const linksColumn2: LinkProps[] = [
+    { title: 'Privacy Terms', href: '#' },
+    { title: 'Privacy Conditions', href: '#' },
+    { title: 'Give Your Feedback', href: '#' },
+    { title: 'This Project on Github', href: '#' },
+  ];
+
   return (
-    <footer className="pt-8 pb-2 md:px-10 lg:px-28 border-t border-slate-700">
+    <footer className="pt-8 pb-2 md:px-10 lg:px-28 border-t border-slate-800 text-center">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="text-xl">
+        <div className="text-base md:text-xl border-b md:border-b-0 pb-2 md:pb-0">
+          <p className="border-b inline-block mb-2">Menu</p>
           {linksColumn1.map((link, index) => (
-            <a key={index} href={link.href} className="block mb-2">{link.title}</a>
+            <Link key={index} href={link.href}>
+              <a className="block mb-2">{link.title}</a>
+            </Link>
           ))}
         </div>
-        <div className="text-xl">
+        <div className="text-base md:text-xl border-b md:border-b-0 pb-2 md:pb-0">
+          <p className="border-b inline-block mb-2">Utils</p>
           {linksColumn2.map((link, index) => (
-            <a key={index} href={link.href} className="block mb-2">{link.title}</a>
+            <Link key={index} href={link.href}>
+              <a className="block mb-2">{link.title}</a>
+            </Link>
           ))}
         </div>
-        <div>
-          <p className="text-xl">If you have a keen eye for details, just like me. You are feel free to check out my social networks or download my resume for a deeper understanding of my background. Appreciate your visit!. Thank you for stopping by!</p>
+        <div className="text-base md:text-xl">
+          <p>If you have a keen eye for details, just like me. You are feel free to check out my social networks or download my resume for a deeper understanding of my background. Appreciate your visit!. Thank you for stopping by!</p>
         </div>
       </div>
-      <p className='text-center mt-4'> &copy; Copyright 2023 | Sujit Kumar</p>
+      <p className='mt-2 md:mt-4 text-sm md:text-xl opacity-50'>&copy; Copyright 2023 | Sujit Kumar</p>
     </footer>
   );
 };
