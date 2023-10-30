@@ -43,12 +43,28 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/Safe-Your-Web-Clone",
     },
     {
+      image: "url(projects/admin-dashboard.png)",
+      title: "Admin Dashboard",
+      filter: ["frontend","backend", "complex"],
+      technologies:["reactjs","material-ui","recharts","mariadb","expressjs"],
+      link:"https://github.com/mnamesujit/fullstack-dev-challenge/tree/main/frontend",
+      code: "https://github.com/mnamesujit/fullstack-dev-challenge/tree/main/frontend",
+    },
+    {
       image: "url(projects/prosecdevs.png)",
       title: "prosecdevs.com",
       filter: ["frontend","backend"],
       technologies:["typescript","tailwind-css","framer-motion"],
       link:"https://prosecdevs.com",
       code: "https://github.com/mnamesujit/prosecdevs",
+    },
+    {
+      image: "url(projects/weather.png)",
+      title: "Weather App",
+      filter: ["frontend"],
+      technologies:["html","css","javascript"],
+      link:"https://mnamesujit.github.io/weather-app/",
+      code: "https://github.com/mnamesujit/weather-app",
     },
     {
       image: "url(./projects/time-picker.png)",
@@ -65,14 +81,6 @@ const Projects = (selected ?: string) => {
       technologies:["html","css","javascript"],
       link:"https://mnamesujit.github.io/calculator/",
       code: "https://github.com/mnamesujit/Calculator",
-    },
-    {
-      image: "url(./projects/tribute-page.png)",
-      title: "Tribute to Mahi",
-      filter: ["frontend"],
-      technologies:["html", "css"],
-      link:"https://mnamesujit.github.io/tribute-page/",
-      code: "https://github.com/mnamesujit/tribute-page",
     },
     {
       image: "url(./projects/safe-your-web-clone.png)",
