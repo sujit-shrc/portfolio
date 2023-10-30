@@ -59,6 +59,14 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/prosecdevs",
     },
     {
+      image: "url(./projects/url-shortner.png)",
+      title: "URL Shortner",
+      filter: ["backend", "complex"],
+      technologies:["express","mongodb", "ejs"],
+      link:"https://github.com/mnamesujit/url-shortner",
+      code: "https://github.com/mnamesujit/url-shortner",
+    },
+    {
       image: "url(projects/weather.png)",
       title: "Weather App",
       filter: ["frontend"],
@@ -89,14 +97,6 @@ const Projects = (selected ?: string) => {
       technologies:["react", "typescript", "scss"],
       link:"https://safeyourweb.netlify.app/",
       code: "https://github.com/mnamesujit/safe-your-web-clone",
-    },
-    {
-      image: "url(./projects/url-shortner.png)",
-      title: "URL Shortner",
-      filter: ["backend"],
-      technologies:["express","mongodb", "ejs"],
-      link:"https://github.com/mnamesujit/url-shortner",
-      code: "https://github.com/mnamesujit/url-shortner",
     },
     {
       image: "url(./projects/pass-gen.png)",
