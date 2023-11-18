@@ -13,6 +13,7 @@ const fetchDevToPosts = async () => {
     const response = await axios.get<DevToPost[]>(
       'https://dev.to/api/articles?username=mnamesujit'
     );
+    console.log(response.data)
     return response.data;
   } catch (error) {
     console.error('Error fetching posts:', error);

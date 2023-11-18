@@ -19,6 +19,7 @@ const DevToPosts: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchDevToPosts();
+      console.log(data)
       setPosts(data);
     };
 
@@ -27,7 +28,7 @@ const DevToPosts: React.FC = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {posts.map((post) => (
+      {posts && posts.map((post) => (
           <a
             href={post.url} 
             key={post.id}

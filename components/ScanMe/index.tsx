@@ -18,10 +18,8 @@ const Index: React.FC = () => {
   };
 
   const shareQRCode = () => {
-    // Generate the shareable URL for your QR code
-     // Replace with your actual QR code URL
 
-    // Use Web Share API if available
+    // Using Web Share API if available
     if (navigator.share) {
       navigator.share({
         title: 'Share My Profile',
