@@ -3,8 +3,8 @@
 const Projects = (selected ?: string) => {
   const mock = [
     {
-      image: "url(projects/safeyourweb.png)",
-      title: "Clique (A Social Media App)",
+      image: "url(projects/clique-ui)",
+      title: "Clique-UI",
       filter: ["frontend"],
       technologies:["typescript","tailwind-css","framer-motion"],
       link:"https://github.com/mnamesujit/clique-ui",
@@ -38,7 +38,7 @@ const Projects = (selected ?: string) => {
       image: "url(projects/safeyourweb-clone.png)",
       title: "SafeYourWeb Clone",
       filter: ["frontend","backend", "complex"],
-      technologies:["nextjs","tailwind-css","recharts"],
+      technologies:["react","typescript","tailwind-css","recharts"],
       link:"https://safeyourweb.netlify.app/",
       code: "https://github.com/mnamesujit/Safe-Your-Web-Clone",
     },
@@ -75,36 +75,12 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/weather-app",
     },
     {
-      image: "url(projects/admin-dashboard.png)",
-      title: "Admin Dashboard",
-      filter: ["frontend","backend", "complex"],
-      technologies:["react","mui","recharts","mariadb","express"],
-      link:"https://github.com/mnamesujit/fullstack-dev-challenge/tree/main/frontend",
-      code: "https://github.com/mnamesujit/fullstack-dev-challenge/tree/main/frontend",
-    },
-    {
-      image: "url(./projects/url-shortner.png)",
-      title: "URL Shortner",
-      filter: ["frontend","backend"],
-      technologies:["express","mongodb", "ejs"],
-      link:"#",
-      code: "https://github.com/mnamesujit/url-shortner",
-    },
-    {
       image: "url(./projects/pass-gen.png)",
       title: "Password Generator",
       filter: ["frontend"],
       technologies:["typescript","tailwind-css"],
       link:"https://test.nucleus-dev.me/",
       code: "https://github.com/mnamesujit/pass-gen",
-    },
-    {
-      image: "url(projects/weather.png)",
-      title: "Weather App",
-      filter: ["frontend"],
-      technologies:["html","css","javascript"],
-      link:"https://mnamesujit.github.io/weather-app/",
-      code: "https://github.com/mnamesujit/weather-app",
     },
     {
       image: "url(./projects/dev-finder.png)",
