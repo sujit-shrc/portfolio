@@ -3,7 +3,7 @@
 const Projects = (selected ?: string) => {
   const mock = [
     {
-      image: "url(projects/clique-ui)",
+      image: "url(projects/clique-ui.png)",
       title: "Clique-UI",
       filter: ["frontend"],
       technologies:["typescript","tailwind-css","framer-motion"],
