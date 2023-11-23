@@ -45,16 +45,16 @@ const Header: React.FC = () => {
         </p>
       </Link>
 
-      <div className="hidden lg:flex space-x-3 items-end justify-center lg:h-auto lg:w-auto group-hover:flex">
+      <div className="hidden lg:flex space-x-3 items-end justify-center lg:h-auto lg:w-auto">
             {socialLinks.map((link, index) => (
               <SocialLink key={index} href={link.href} icon={link.icon} />
             ))}
       </div>
 
       {/* Mobile View for Social links */}
-      <TbSocial size={50} className="sm:hidden fixed left-[13px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-3 mb-3 animate-bounce ${showSocialLinks ? 'animate-none' : ''}`}" onClick = {toggleSocialLinks} />
+      <TbSocial size={50} className="sm:hidden fixed left-[7px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-3 mb-3 animate-bounce ${showSocialLinks ? 'animate-none' : ''}`}" onClick = {toggleSocialLinks} />
        {showSocialLinks && (
-        <div className="sm:hidden fixed left-3 bottom-9 py-2 pb-12 bg-neutral-800 rounded-full z-40 text-md">
+        <div className="sm:hidden fixed left-1 bottom-7 py-2 pb-12 bg-neutral-800 rounded-full">
           {socialLinks.map((link, index) => (
             <SocialLink key={index} href={link.href} icon={link.icon} />
           ))}
