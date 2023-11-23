@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFilePdf } from "react-icons/fa6";
 import { ImGithub } from "react-icons/im";
+import { IoExit } from "react-icons/io5";
 import { GrTwitter } from "react-icons/gr";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { TbSocial } from "react-icons/tb";
@@ -52,7 +53,20 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile View for Social links */}
-      <TbSocial size={50} className="sm:hidden fixed left-[7px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-3 mb-3 animate-bounce ${showSocialLinks ? 'animate-none' : ''}`}" onClick = {toggleSocialLinks} />
+      {showSocialLinks ? (
+        <IoExit
+          size={50}
+          className="sm:hidden fixed left-[7px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-3 mb-3 animate-bounce"
+          onClick={toggleSocialLinks}
+        />
+      ) : (
+        <TbSocial
+          size={50}
+          className="sm:hidden fixed left-[7px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-3 mb-3 animate-bounce"
+          onClick={toggleSocialLinks}
+        />
+      )}
+      
        {showSocialLinks && (
         <div className="sm:hidden fixed left-1 bottom-7 py-2 pb-12 bg-neutral-800 rounded-full">
           {socialLinks.map((link, index) => (
