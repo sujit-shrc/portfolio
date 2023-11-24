@@ -21,7 +21,7 @@ const socialLinks = [
     icon: <FaLinkedinIn className="text-3xl" />,
   },
   {
-    href: "https://wa.me/919305083852?text=Hey!!%20Sujit",
+    href: "https://wa.me/919305083852?text=Hey%21%20%F0%9F%91%8B%20Sujit",
     icon: <RiWhatsappFill className="text-[32px]" />,
   },
   {
