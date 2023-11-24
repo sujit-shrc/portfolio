@@ -7,6 +7,7 @@ import { ImGithub } from "react-icons/im";
 import { IoExit } from "react-icons/io5";
 import { GrTwitter } from "react-icons/gr";
 import { PiInstagramLogoFill } from "react-icons/pi";
+import { RiWhatsappFill } from "react-icons/ri";
 import { TbSocial } from "react-icons/tb";
 import SocialLink from "./SocialLinks";
 import ThemeSwitch from "../ThemeSwitcher";
@@ -18,6 +19,10 @@ const socialLinks = [
   {
     href: "https://www.linkedin.com/in/mnamesujit",
     icon: <FaLinkedinIn className="text-3xl" />,
+  },
+  {
+    href: "https://wa.me/919305083852?text=Hey!!%20Sujit",
+    icon: <RiWhatsappFill className="text-[32px]" />,
   },
   {
     href: "#",
