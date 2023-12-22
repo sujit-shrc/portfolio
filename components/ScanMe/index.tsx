@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react';
-import { IoMdBarcode } from 'react-icons/io';
+import { IoBarcodeOutline } from "react-icons/io5";
 import { RiCloseFill, RiShareForwardFill } from 'react-icons/ri';
 import QRCode from 'react-qr-code';
 
@@ -36,8 +36,8 @@ const Index: React.FC = () => {
 
   return (
     <div>
-      <IoMdBarcode
-        className="text-2xl cursor-pointer"
+      <IoBarcodeOutline
+        className="text-[32px] font-bold cursor-pointer"
         onClick={openModal}
       />
 
