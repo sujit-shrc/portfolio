@@ -37,7 +37,7 @@ const Index: React.FC = () => {
   return (
     <div>
       <IoBarcodeOutline
-        className="text-[32px] font-bold cursor-pointer"
+        className="text-[32px] font-bold cursor-pointer hover:text-emerald-500"
         onClick={openModal}
       />
 
