@@ -70,11 +70,10 @@ export default function RootLayout({
       <body className={inter.className}>
          <ThemeProvider
             attribute="class"
-            defaultTheme="system"
-            enableSystem
+            defaultTheme="dark"
             disableTransitionOnChange
           > 
-           <div className='min-h-screen min-w-screen flex flex-col items-center pt-0 md:pt-8 lg:pt-14'>
+           <div className='min-h-screen min-w-screen flex flex-col items-center pt-0 md:pt-8'>
               <Header />
               {children}
            </div>

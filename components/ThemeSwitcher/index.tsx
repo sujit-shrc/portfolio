@@ -15,7 +15,7 @@ const ThemeSwitch: React.FC = () => {
   const isActive = theme === "light";
 
   const switchClasses = `flex items-center justify-center w-5 h-5 md:w-6 md:h-6 text-dark bg-white rounded-full transform ${
-    isActive ? 'translate-x-1' : 'translate-x-[20px] md:translate-x-7'
+    isActive ? 'translate-x-1' : 'translate-x-[24px] md:translate-x-7'
   } transition-transform duration-500 ease-in-out`;
 
   return (
