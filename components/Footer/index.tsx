@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           <p className="border-b inline-block mb-2">Menu</p>
           {linksColumn1.map((link, index) => (
             <Link key={index} href={link.href}>
-              <a className="block mb-2">{link.title}</a>
+              <span className="block mb-2">{link.title}</span>
             </Link>
           ))}
         </div>
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           <p className="border-b inline-block mb-2">Utils</p>
           {linksColumn2.map((link, index) => (
             <Link key={index} href={link.href}>
-              <a className="block mb-2">{link.title}</a>
+              <span className="block mb-2">{link.title}</span>
             </Link>
           ))}
         </div>

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFilePdf } from "react-icons/fa6";
-import { ImGithub } from "react-icons/im";
 import { IoExit } from "react-icons/io5";
 import { FaGithubAlt } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";

@@ -7,9 +7,9 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between">
       <TyperComponent />
       <BottomNav />
-      <div className="flex items-center gap-1 mt-4 mb-1.5 md:hidden">
-        <HiMiniInformationCircle className="text-xl text-gray-500" />
-        <p className="text-gray-700">Tap the text logo to navigate</p>
+      <div className="flex items-center gap-1 mt-4 mb-1.5 sm:hidden">
+        <HiMiniInformationCircle className="text-xl text-emerald-500" />
+        <p className="text-inherit opacity-30">Tap the text logo to navigate</p>
       </div>
     </main>
   );
