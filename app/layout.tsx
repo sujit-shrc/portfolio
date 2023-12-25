@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     absolute: "Nucleus.dev | Sujit Kumar - Full Stack Developer",
   },
   description:
-  "Hey, I'm Sujit Kumar, a budding Full Stack Web Developer passionate about crafting seamless digital experiences. While I'm in the early stages of my journey, I love sharing my coding adventures on Dev.to. Join me as I explore the tech world, contribute to open source projects, and share insights on Dev.to. and let's shape the future of the web together! 💡🚀 #FullStackMagic #CodeCrafting #OpenSourceExplorer",
+    "Hey, I'm Sujit Kumar, a budding Full Stack Web Developer passionate about crafting seamless digital experiences. While I'm in the early stages of my journey, I love sharing my coding adventures on Dev.to. Join me as I explore the tech world, contribute to open source projects, and share insights on Dev.to. and let's shape the future of the web together! 💡🚀 #FullStackMagic #CodeCrafting #OpenSourceExplorer",
   category: "Portfolio",
   metadataBase: new URL("https://github.com/mnamesujit"),
   openGraph: {
@@ -68,16 +68,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-         <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            disableTransitionOnChange
-          > 
-           <div className='min-h-screen min-w-screen flex flex-col items-center pt-0 md:pt-8'>
-              <Header />
-              {children}
-           </div>
-          </ThemeProvider>
+
+        {/* Dotted pattern background */}
+        <div className="fixed dotted-background-light dark:dotted-background-dark inset-0 right-0 z-[-1] ">
+        </div>
+
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          disableTransitionOnChange
+        >
+          <div className='min-h-screen min-w-screen flex flex-col items-center pt-0 md:pt-8'>
+            <Header />
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )
