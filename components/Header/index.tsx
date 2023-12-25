@@ -71,7 +71,7 @@ const Header: React.FC = () => {
           onClick={toggleSocialLinks}
         />
       )}
-      
+
        {showSocialLinks && (
         <div className="sm:hidden fixed left-1 bottom-7 py-2 pb-12 bg-neutral-800 rounded-full">
           {socialLinks.map((link, index) => (
@@ -83,7 +83,7 @@ const Header: React.FC = () => {
       <div className="flex items-center gap-4 md:gap-8">
         {/* Theme Switcher */}
         <ThemeSwitch />
-        <ScanMe />  
+        <ScanMe />
       </div>
     </div>
   );
