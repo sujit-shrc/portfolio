@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
     { title: 'Contact-Me', href: '#' },
     { title: 'My-Contributions', href: '#' },
   ];
-  
+
   const linksColumn2: LinkProps[] = [
     { title: 'Privacy Terms', href: '#' },
     { title: 'Privacy Conditions', href: '#' },
