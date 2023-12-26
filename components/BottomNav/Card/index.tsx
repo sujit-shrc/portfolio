@@ -9,7 +9,7 @@ interface Props{
 
 const Card: React.FC<Props> = ({ href, title, description }) => {
   return (
-    <div className="group h-[10.5rem] md:h-36 flex items-center justify-center rounded-lg border border-gray-300 dark:border-neutral-800 px-4 py-4 hover:border-emerald-500 dark:hover:border-emerald-500 dark:hover:border-opacity-40 transition-all hover:shadow-[5px_5px_0px_0px_rgba(4,120,87)]">
+    <div className="group h-[10.5rem] md:h-36 flex items-center justify-center rounded-lg border border-gray-300 dark:border-neutral-800 px-4 py-4 hover:border-emerald-500 dark:hover:border-emerald-500 dark:hover:border-opacity-40 transition-all hover:shadow-[5px_5px_4px_0px_rgba(4,120,87,1)] bg-opacity-10 bg-gray-300 dark:bg-gray-900 dark:bg-opacity-10">
       <Link href={href}>
         <h2 className="text-2xl lg:text-[1.7rem] font-semibold mb-2 group-hover:text-emerald-500">
           {title}{' '}
