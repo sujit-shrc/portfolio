@@ -6,7 +6,7 @@ const TyperComponent: React.FC = () => {
       <div className='w-100 sm:w-3/4 mx-auto space-y-2 sm:space-y-4'>
         <h1 className="text-2xl sm:text-4xl">Software Developer, <span className="text-emerald-500">OpenSource Contributor</span> and <span className='text-emerald-500'>Linux Administrator</span></h1>
         <p className='text-sm sm:text-base'>
-          I'm Sujit Kumar, a software engineer based in Kanpur, India 📍. I love to create products that are not only beautiful and intuitive but also a delightful to use.
+          I&apos;m Sujit Kumar, a software engineer based in Kanpur, India 📍. I love to create products that are not only beautiful and intuitive but also a delightful to use.
         </p>
         <p className="text-sm sm:text-base">
           I Currently work as a Full Stack Engineer Intern at ProSecdevs, where I am developing impactful real-world industry projects with a global reach 🌏.
