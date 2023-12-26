@@ -20,7 +20,7 @@ const ThemeSwitch: React.FC = () => {
 
   return (
     <div className="relative w-12 h-7 md:w-14 md:h-[30px] rounded-full cursor-pointer py-[3px] bg-[#ccc] text-slate-900" onClick={toggleTheme}>
-      <button className={switchClasses}>
+      <button className={switchClasses} aria-label="theme">
         {isActive ? <PiSunDimFill size={16} /> : <BiSolidMoon />}
       </button>
     </div>

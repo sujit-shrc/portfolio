@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 @font-face {
+  src: url('/fonts/Limelight-Regular.ttf') format('truetype');
   font-family: 'limelight';
   font-style: regular;
   font-weight: 400;
-  src: url('/fonts/Limelight-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 * {
@@ -19,13 +20,6 @@
 body {
   min-height: 100vh;
   max-width: 100vw;  
-}
-
-.dotted-background{
-  background-image: radial-gradient(#181818 5%,#0000001f 15%);
-  background-position: 0 0,14px 14px;
-  background-size: 16px 16px;
-  position: fixed !important;
 }
 
 @layer components {
