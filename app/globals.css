@@ -3,24 +3,29 @@
 @tailwind utilities;
 
 @font-face {
-  src: url('/fonts/Limelight-Regular.ttf') format('truetype');
-  font-family: 'limelight';
+  src: url("/fonts/Limelight-Regular.ttf") format("truetype");
+  font-family: "limelight";
   font-style: regular;
   font-weight: 400;
   font-display: swap;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
-  max-width: 100vw;  
+  max-width: 100vw;
 }
 
 @layer components {
@@ -29,13 +34,17 @@ body {
   }
 
   .dotted-background-dark {
-    background-image: radial-gradient(#181818 5%, #0000003d 15%);
+    background-image: radial-gradient(#222222 5%, #0000003d 15%);
   }
 }
 
 @layer utilities {
-  .dotted-background-light, .dark .dotted-background-dark {
-    background-position: 0 0, 14px 14px;
+  .dotted-background-light,
+  .dark .dotted-background-dark {
+    background-position:
+      0 0,
+      14px 14px;
     background-size: 16px 16px;
   }
 }
+
