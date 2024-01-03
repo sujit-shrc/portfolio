@@ -78,7 +78,7 @@ export default function RootLayout({
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <div className='min-h-screen min-w-screen flex flex-col items-center pt-0 md:pt-8'>
+          <div className='min-h-screen min-w-screen flex flex-col items-center pt-0 md:pt-8 px-2 md:px-0 mx-0 md:mx-4 lg:mx-20'>
             <Header />
             {children}
           </div>

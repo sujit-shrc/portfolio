@@ -17,7 +17,7 @@ const Index: React.FC = () => {
     { subject: 'Redux & Context API', A: 99, B: 100, fullMark: 150 },
     { subject: 'Postman', A: 140, B: 120, fullMark: 150 },
     { subject: 'Docker', A: 135, B: 85, fullMark: 150 },
-    { subject: 'Github Workflow', A: 135, B: 140, fullMark: 150 },
+    { subject: 'Git Workflow', A: 135, B: 140, fullMark: 150 },
   ];
 
   const dev = [
@@ -57,10 +57,10 @@ const Index: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row md:justify-around md:gap-2 items-center w-full text-center">
-      <div className="mb-8 w-full md:w-3/5 lg:w-1/2">
+    <div className="flex flex-col md:flex-row md:gap-2 text-center">
+      <div className="w-full mb-8 md:w-3/5 lg:w-1/2">
         <h1 className="text-2xl">Tech Tools </h1>
-        <div className="w-full mx-auto">
+        <div className="flex justify-center w-full mx-auto">
           <RadarChart outerRadius={90} width={chartWidth} height={250} data={tools}>
             <PolarGrid />
             <PolarAngleAxis dataKey="subject" />
@@ -73,7 +73,7 @@ const Index: React.FC = () => {
       </div>
       <div className="w-full mb-8 md:w-3/5 lg:w-1/2">
         <h1 className="text-2xl">Dev. Libraries</h1>
-        <div className="w-full mx-auto">
+        <div className="flex justify-center w-full mx-auto">
           <RadarChart outerRadius={90} width={chartWidth} height={250} data={dev}>
             <PolarGrid />
             <PolarAngleAxis dataKey="subject" />

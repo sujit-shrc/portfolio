@@ -9,7 +9,7 @@ export default function Home() {
       <BottomNav />
       <div className="flex items-center gap-1 mt-4 mb-1.5 sm:hidden">
         <HiMiniInformationCircle className="text-xl text-emerald-500" />
-        <p className="text-inherit opacity-30">Tap the text logo to navigate</p>
+        <p className="text-inherit opacity-20">Tap the text logo to navigate</p>
       </div>
     </main>
   );

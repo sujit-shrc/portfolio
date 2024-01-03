@@ -33,9 +33,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div className="z-10 max-w-7xl w-full flex items-center justify-between font-mono px-0 pr-4 md:px-4 border-b border-gray-300 dark:border-neutral-800 md:border-none">
+    <div className="z-10 max-w-7xl w-full flex items-center justify-between font-mono border-b border-gray-300 dark:border-neutral-800 md:border-none">
       <Link href={"/"}>
-        <p className="md:border-b border-gray-300 p-4 md:p-3 md:px-4 lg:py-2.5 md:backdrop-blur-2xl dark:border-neutral-800 md:w-auto md:rounded-full md:border hover:hover:text-emerald-500">
+        <p className="md:border-b border-gray-300 px-0 py-3 md:px-4 lg:py-2.5 md:backdrop-blur-2xl dark:border-neutral-800 md:w-auto md:rounded-full md:border hover:hover:text-emerald-500">
           <code className="font-mono text-base md:text-sm font-bold">
             <span className="hidden md:inline">FullStack/StackShow</span>
             /Nucleus.dev

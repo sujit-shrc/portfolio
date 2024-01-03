@@ -1,82 +1,93 @@
-import IconsCard from "../../IconsCard"
-import { FaPython, FaGitAlt } from "react-icons/fa"
-import { RiReactjsFill } from "react-icons/ri"
-import { SiJavascript, SiTypescript, SiNextdotjs, SiExpress, SiMariadb, SiLinux } from "react-icons/si"
-import { IoLogoNodejs } from "react-icons/io"
-import { PiGithubLogoFill } from "react-icons/pi"
-import { BiLogoMongodb } from "react-icons/bi"
+import { FaNodeJs } from 'react-icons/fa6';
+import {
+  DiReact,
+  DiMongodb,
+  DiGit,
+  DiDocker,
+} from 'react-icons/di';
+
+import { BsDatabaseFillLock } from "react-icons/bs";
+import { TbDevicesCode } from "react-icons/tb";
+import { BiLogoKubernetes, BiLogoPostgresql } from "react-icons/bi";
+import { SiTailwindcss, SiRedux, SiExpress, SiReactquery, SiGithubactions, SiGraphql, SiMariadb, SiNextdotjs } from "react-icons/si";
+import { TbBrandFramerMotion, TbBrandTypescript } from "react-icons/tb";
+import { RiFlutterFill } from "react-icons/ri";
+import { IoHardwareChipOutline } from "react-icons/io5";
+import { VscTerminalBash } from "react-icons/vsc";
 
 
-const index: React.FC = () => {
-  const skills = [
-    {
-      icon: <SiJavascript className="text-5xl md:text-6xl" />,
-      href: 'https://www.javascript.com/',
-      title: 'JavaScript',
-    },
-    {
-      icon: <SiTypescript className="text-5xl md:text-6xl" />,
-      href: 'https://www.typescriptlang.org/',
-      title: 'TypeScript',
-    },
-    {
-      icon: <FaPython className="text-5xl md:text-6xl" />,
-      href: 'https://www.python.org/',
-      title: 'Python',
-    },
-    {
-      icon: <RiReactjsFill className="text-5xl md:text-6xl" />,
-      href: 'https://nodejs.org/',
-      title: 'Node.Js',
-    },
-    {
-      icon: <SiNextdotjs className="text-5xl md:text-6xl" />,
-      href: 'https://nextjs.org/',
-      title: 'Next.Js',
-    },
-    {
-      icon: <IoLogoNodejs className="text-5xl md:text-6xl" />,
-      href: 'https://nodejs.org/',
-      title: 'NodeJs',
-    },
-    {
-      icon: <SiExpress className="text-5xl md:text-6xl" />,
-      href: 'https://expressjs.com/',
-      title: 'ExpressJs',
-    },
-    {
-      icon: <SiMariadb className="text-5xl md:text-6xl" />,
-      href: 'https://mariadb.org/',
-      title: 'MariaDB',
-    },
-    {
-      icon: <BiLogoMongodb className="text-5xl md:text-6xl" />,
-      href: 'https://www.mongodb.com/',
-      title: 'MongoDb',
-    },
-    {
-      icon: <FaGitAlt className="text-5xl md:text-6xl" />,
-      href: 'https://git-scm.com/',
-      title: 'Git',
-    },
-    {
-      icon: <SiLinux className="text-5xl md:text-6xl" />,
-      href: 'https://archlinux.org/',
-      title: 'Linux',
-    },
-    {
-      icon: <PiGithubLogoFill className="text-5xl md:text-6xl" />,
-      href: 'https://github.com',
-      title: 'Github',
-    },
-  ]
+const skillsData = {
+  frontend: {
+    title: 'Frontend',
+    skills: [
+      { name: 'React', icon: <DiReact color="#61DAFB" /> },
+      { name: 'Next.js', icon: <SiNextdotjs color="#FFFFFF" /> },
+      { name: 'Tailwind CSS', icon: <SiTailwindcss color="#38B2AC" /> },
+      { name: 'Framer Motion', icon: <TbBrandFramerMotion color="#02569B" /> },
+      { name: 'React Query', icon: <SiReactquery color="#0A192F" /> },
+      { name: 'Redux', icon: <SiRedux color="#764ABC" /> },
+      { name: 'TypeScript', icon: <TbBrandTypescript color="#3178C6" /> },
+      { name: 'Flutter', icon: <RiFlutterFill color="#02569B" /> },
+    ],
+    icon: <TbDevicesCode color="#61DAFB" />,
+  },
+  backend: {
+    title: 'Backend',
+    skills: [
+      { name: 'Node.js', icon: <FaNodeJs color="#8CC84B" /> },
+      { name: 'ExpressJs', icon: <SiExpress color="#FFFFFF" /> },
+    ],
+    icon: <IoHardwareChipOutline color="#8CC84B" />,
+  },
+  databases: {
+    title: 'Databases',
+    skills: [
+      { name: 'MariaDB', icon: <SiMariadb color="#003545" /> },
+      { name: 'PostgreSQL', icon: <BiLogoPostgresql color="#336791" /> },
+      { name: 'GraphQL', icon: <SiGraphql color="#E10098" /> },
+      { name: 'MongoDB', icon: <DiMongodb color="#4DB33D" /> },
+    ],
+    icon: <BsDatabaseFillLock color="#00DD80" />,
+  },
+  devops: {
+    title: 'DevOps',
+    skills: [
+      { name: 'Git', icon: <DiGit color="#F05032" /> },
+      { name: 'Docker', icon: <DiDocker color="#2496ED" /> },
+      { name: 'Kubernetes', icon: <BiLogoKubernetes color="#326CE5" /> },
+      { name: 'Bash Scripting', icon: <VscTerminalBash color="#fff" /> },
+    ],
+    icon: <SiGithubactions color="#DDDD00" />,
+  },
+};
+
+const SkillComponent = () => {
   return (
-    <div className="flex flex-wrap justify-evenly md:justify-center gap-5 md:gap-8">
-      {skills.map((data: { icon: React.ReactNode; title: string; href: string }, index: number) => (
-        <IconsCard key={index} {...data} />
+    <div className="flex flex-col gap-3 md:flex-row md:flex-wrap justify-between">
+      {Object.values(skillsData).map((category) => (
+        <div
+          key={category.title}
+          className="border border-0.5 border-gray-800 rounded-lg w-full lg:w-[275px] p-4"
+        >
+          <div className='flex gap-4 items-center border-dashed border-b-[1px] border-slate-800 mb-2 pb-2'>
+            <div className="text-2xl">{category.icon}</div>
+            <p className="text-xl font-semibold">{category.title}</p>
+          </div>
+          <ul className='flex flex-wrap gap-2 lg:block'>
+            {category.skills.map((skill, index) => (
+              <li
+                key={index}
+                className="flex items-center mb-2 hover:text-blue-500"
+              >
+                <div className="mr-2 text-2xl">{skill.icon}</div>
+                {skill.name}
+              </li>
+            ))}
+          </ul>
+        </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default SkillComponent;
