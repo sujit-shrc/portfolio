@@ -11,13 +11,25 @@ const index: React.FC = () => {
       degree: "Master of Computer Application",
       school: "Kamla Nehru Instiute of Technology",
       icon: FaGraduationCap,
-      year: "2024",
+      year: "Nov 2022-May 2024",
     },
     {
-      degree: "Bachelor of Computer Applicaton",
-      school: "CSJM University Kanpur",
+      degree: "Full Stack Developer Intern",
+      school: "ProSecDevs",
       icon: FaGraduationCap,
-      year: "2022",
+      year: "Jun 2023-Ongoing",
+    },
+    {
+      degree: "Hacktoberfest Contributer",
+      school: "Hacktoberfest",
+      icon: FaGraduationCap,
+      year: "Oct 2022 & Oct-2023",
+    },
+    {
+      degree: "Devsnest Hackthon",
+      school: "Devsnest",
+      icon: FaGraduationCap,
+      year: "Nov 2022",
     },
   ];
 
@@ -53,10 +65,10 @@ const index: React.FC = () => {
   return (
     <div className="">
       <h1 className="text-3xl font-bold mb-4 text-center">Formations and courses</h1>
-      <div className="flex flex-col lg:gap-4 pt-6 lg:px-10 md:flex-row sm:items-center justify-center md:justify-evenly">
-        <div className="flex flex-col gap-3 space-y-1">
-          <h2 className="text-3xl font-semibold mb-2">Education</h2>
-          <ul>
+      <div className="flex flex-col gap-2 pt-6 md:flex-row sm:items-center justify-center md:justify-between">
+        <div className="flex flex-col gap-2">
+          <h2 className="text-3xl font-semibold mb-2">Education & ECA</h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {education.map((edu, index) => (
               <Education key={index} {...edu} />
             ))}
@@ -71,7 +83,7 @@ const index: React.FC = () => {
               <input
                 value="https://drive.google.com/file/d/1BCwctarESyC_r3ICEqzZNGbMtBPHRnfu/view?usp=drivesdk"
                 readOnly
-                className="w-full px-2 py-1 bg-transparent dark:bg-slate-800 rounded-md outline-none border border-slate-700"
+                className="w-full px-2 py-1 bg-transparent dark:bg-slate-800 dark:bg-opacity-40 rounded-md outline-none border border-slate-700"
               />
               <button className=" text-base bg-transparent dark:bg-slate-800 focus:bg-green-400 px-2 py-1 border border-slate-800 rounded-md shrink-0" onClick={copyToClipboard}>
                 <MdContentCopy />
