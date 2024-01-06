@@ -40,4 +40,3 @@ const index: React.FC<Props> = ({
 };
 
 export default index;
-
