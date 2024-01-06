@@ -1,7 +1,7 @@
 const TyperComponent: React.FC = () => {
   return (
-    <div className="font-limelight text-3xl md:text-4xl lg:text-5xl font-semibold min-h-[calc(100vh-320px)] md:min-h-[calc(100vh-270px)] flex items-center p-4">
-      <div className="w-100 sm:w-3/4 mx-auto sm:mx-12 space-y-2 sm:space-y-4">
+    <div className="font-limelight text-3xl md:text-4xl lg:text-5xl font-semibold min-h-[calc(100vh-320px)] md:min-h-[calc(100vh-270px)] flex items-center">
+      <div className="w-100 sm:w-3/4">
         <h1 className="text-2xl sm:text-4xl">
           Software Developer,{" "}
           <span className="text-emerald-500">OpenSource Contributor</span> and{" "}

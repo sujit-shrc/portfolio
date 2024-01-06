@@ -1,6 +1,7 @@
-"use client"
 import Image from "next/image";
 import { CgChevronDoubleRight } from "react-icons/cg"
+import { FaEyeSlash } from "react-icons/fa";
+
 
 interface Props {
   logoSrc: string;
@@ -26,12 +27,12 @@ const index: React.FC<Props> = ({
           <p className="text-sm text-gray-500">@{company}</p>
         </div>
       </div>
-      <div className="flex items-center justify-center space-x-1 px-1.5 py-0.5 md:px-2 md:py-1 h-fit border-[0.5px] border-slate-500 rounded-md">
+      <div className="flex items-center justify-center space-x-1 px-1.5 py-0.5 md:px-2 md:py-1 h-fit border-[0.5px] border-slate-700 rounded-md hover:text-emerald-500">
       <a
        href={validatorLink}
        target="_blank"
-       rel="noopener noreferrer" 
-      >view</a>
+       rel="noopener noreferrer"
+      ><FaEyeSlash /></a>
       <CgChevronDoubleRight />
       </div>
     </div>
