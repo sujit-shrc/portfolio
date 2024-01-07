@@ -9,8 +9,8 @@ interface EducationEntryProps {
 
 const EducationEntry: React.FC<EducationEntryProps> = ({ degree, school, icon, year }) => {
   return (
-    <li className="mb-4 border px-4 md:px-6 py-3 rounded-md border-slate-700">
-      <div className="flex gap-4 items-center">
+    <li className="group border sm:border-b-1 border-slate-600 p-3 md:px-4 rounded-md">
+      <div className="flex gap-3 items-center">
         <div className="">
          <FaGraduationCap size={24} />
         </div>
