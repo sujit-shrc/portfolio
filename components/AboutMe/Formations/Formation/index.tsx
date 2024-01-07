@@ -12,7 +12,7 @@ const EducationEntry: React.FC<EducationEntryProps> = ({ degree, school, icon, y
     <li className="group border sm:border-b-1 border-slate-600 p-3 md:px-4 rounded-md">
       <div className="flex gap-3 items-center">
         <div className="">
-         <FaGraduationCap size={24} />
+         {icon}
         </div>
         <div>
           <h3 className="text-lg font-normal">{degree}</h3>
