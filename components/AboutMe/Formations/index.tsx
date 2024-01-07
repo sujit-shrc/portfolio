@@ -2,6 +2,11 @@
 import Education from "./Formation";
 import Courses from "./Courses";
 import { FaGraduationCap } from "react-icons/fa";
+import { MdOutlineWorkHistory } from "react-icons/md";
+import { SiPaloaltonetworks } from "react-icons/si";
+import { PiGraduationCapFill } from "react-icons/pi";
+import { SiHackster } from "react-icons/si";
+
 import { MdContentCopy } from "react-icons/md"
 
 const index: React.FC = () => {
@@ -10,25 +15,25 @@ const index: React.FC = () => {
     {
       degree: "Master of Computer Application",
       school: "Kamla Nehru Instiute of Technology",
-      icon: FaGraduationCap,
+      icon: <PiGraduationCapFill size={24} />,
       year: "Nov 2022-May 2024",
     },
     {
       degree: "Full Stack Developer Intern",
       school: "ProSecDevs",
-      icon: FaGraduationCap,
+      icon: <MdOutlineWorkHistory size={24} />,
       year: "Jun 2023-Ongoing",
     },
     {
       degree: "Hacktoberfest Contributer",
       school: "Hacktoberfest",
-      icon: FaGraduationCap,
+      icon: <SiHackster size={24} />,
       year: "Oct 2022 & Oct-2023",
     },
     {
       degree: "Devsnest Hackthon",
       school: "Devsnest",
-      icon: FaGraduationCap,
+      icon: <SiPaloaltonetworks size={24} />,
       year: "Nov 2022",
     },
   ];

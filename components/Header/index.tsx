@@ -52,20 +52,20 @@ const Header: React.FC = () => {
       {/* Mobile View for Social links */}
       {showSocialLinks ? (
         <IoExit
-          size={50}
-          className="sm:hidden fixed left-[7px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-3 mb-3 animate-bounce"
+          size={40}
+          className="sm:hidden fixed left-[6px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-2 mb-2"
           onClick={toggleSocialLinks}
         />
       ) : (
         <TbSocial
-          size={50}
-          className="sm:hidden fixed left-[7px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-3 mb-3 animate-bounce"
+          size={40}
+          className="sm:hidden fixed left-[6px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-2 mb-2"
           onClick={toggleSocialLinks}
         />
       )}
       
        {showSocialLinks && (
-        <div className="sm:hidden fixed left-1 bottom-7 py-2 pb-12 bg-neutral-800 rounded-full">
+        <div className="sm:hidden fixed left-1 bottom-5 py-1 pb-8 bg-neutral-800 rounded-full">
           {socialLinks.map((link, index) => (
             <SocialLink key={index} href={link.href} icon={link.icon} />
           ))}
