@@ -9,7 +9,7 @@ import {
 import { BsDatabaseFillLock } from "react-icons/bs";
 import { TbDevicesCode } from "react-icons/tb";
 import { BiLogoKubernetes, BiLogoPostgresql } from "react-icons/bi";
-import { SiTailwindcss, SiRedux, SiExpress, SiReactquery, SiGithubactions, SiGraphql, SiMariadb, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiRedux, SiExpress, SiReactquery, SiGithubactions, SiGraphql, SiMariadb, SiNextdotjs, SiDocker } from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandTypescript } from "react-icons/tb";
 import { RiFlutterFill } from "react-icons/ri";
 import { IoHardwareChipOutline } from "react-icons/io5";
@@ -21,7 +21,7 @@ const skillsData = {
     title: 'Frontend',
     skills: [
       { name: 'React', icon: <DiReact color="#61DAFB" /> },
-      { name: 'Next.js', icon: <SiNextdotjs color="#FFFFFF" /> },
+      { name: 'Next.js', icon: <SiNextdotjs /> },
       { name: 'Tailwind CSS', icon: <SiTailwindcss color="#38B2AC" /> },
       { name: 'Framer Motion', icon: <TbBrandFramerMotion color="#02569B" /> },
       { name: 'React Query', icon: <SiReactquery color="#0A192F" /> },
@@ -53,9 +53,9 @@ const skillsData = {
     title: 'DevOps',
     skills: [
       { name: 'Git', icon: <DiGit color="#F05032" /> },
-      { name: 'Docker', icon: <DiDocker color="#2496ED" /> },
+      { name: 'Docker', icon: <SiDocker color="#2496ED" /> },
       { name: 'Kubernetes', icon: <BiLogoKubernetes color="#326CE5" /> },
-      { name: 'Bash Scripting', icon: <VscTerminalBash color="#fff" /> },
+      { name: 'Bash Scripting', icon: <VscTerminalBash /> },
     ],
     icon: <SiGithubactions color="#DDDD00" />,
   },
