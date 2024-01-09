@@ -70,7 +70,7 @@ const Form: React.FC = () => {
   };
 
   return (
-    <div className="w-full md:w-[500px] mx-auto border border-slate-200 rounded shadow-md p-3 md:p-5">
+    <div className="w-full md:w-[500px] mx-auto border border-gray-800 rounded-md shadow-md p-3 md:p-5">
     {submitted ? (
       <p className="text-green-600">Message sent successfully!</p>
     ) : (
@@ -80,11 +80,11 @@ const Form: React.FC = () => {
           <input
             type="text"
             name="name"
-            placeholder='Nucleus'
+            placeholder='Name'
             value={formData.name}
             onChange={handleInputChange}
-            className={`mt-1 p-2 w-full border ${
-              errors.name ? 'border-red-500' : 'border-gray-300'
+            className={`mt-1 p-1.5 w-full border-b ${
+              errors.name ? 'border-red-500' : 'border-gray-500'
             } rounded`}
           />
           {errors.name && (
@@ -96,11 +96,11 @@ const Form: React.FC = () => {
           <input
             type="text"
             name="email"
-            placeholder='nucleus@me.com'
+            placeholder='example@email.com'
             value={formData.email}
             onChange={handleInputChange}
-            className={`mt-1 p-2 w-full border ${
-              errors.email ? 'border-red-500' : 'border-gray-300'
+            className={`mt-1 p-1.5 w-full border-b ${
+              errors.email ? 'border-red-500' : 'border-gray-500'
             } rounded`}
           />
           {errors.email && (
@@ -115,8 +115,8 @@ const Form: React.FC = () => {
             placeholder='your message'
             value={formData.message}
             onChange={handleInputChange}
-            className={`mt-1 p-2 w-full border ${
-              errors.message ? 'border-red-500' : 'border-gray-300'
+            className={`mt-1 p-1.5 w-full border-b ${
+              errors.message ? 'border-red-500' : 'border-gray-500'
             } rounded`}
           />
           {errors.message && (
@@ -125,7 +125,7 @@ const Form: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="bg-slate-200 text-black text-semibold px-4 py-2 rounded hover:bg-slate-400 transition-colors duration-300 w-full md:w-auto"
+          className="bg-slate-200 text-black text-semibold px-4 py-1.5 rounded hover:bg-slate-400 transition-colors duration-300 w-full md:w-auto"
         >
           Send Message
         </button>

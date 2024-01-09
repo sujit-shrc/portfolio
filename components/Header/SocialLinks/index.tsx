@@ -6,7 +6,7 @@ interface SocialLinkProps {
   const SocialLink: React.FC<SocialLinkProps> = ({ href, icon }) => {
     return (
       <a
-        className="flex items-center gap-2 px-3 py-1.5 sm:py-2 md:p-8 lg:p-0 hover:text-emerald-500"
+        className="flex items-center gap-2 px-2.5 py-1.5 sm:py-2 md:p-8 lg:p-0 hover:text-emerald-500"
         href={href}
         target="_blank"
         rel="noopener noreferrer"
