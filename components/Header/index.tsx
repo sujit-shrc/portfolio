@@ -53,19 +53,19 @@ const Header: React.FC = () => {
       {showSocialLinks ? (
         <IoExit
           size={40}
-          className="sm:hidden fixed left-[6px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-2 mb-2"
+          className="sm:hidden fixed left-[8px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-1.5 mb-2"
           onClick={toggleSocialLinks}
         />
       ) : (
         <TbSocial
           size={40}
-          className="sm:hidden fixed left-[6px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-2 mb-2"
+          className="sm:hidden fixed left-[8px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-1.5 mb-2"
           onClick={toggleSocialLinks}
         />
       )}
       
        {showSocialLinks && (
-        <div className="sm:hidden fixed left-1 bottom-5 py-1 pb-8 bg-neutral-800 rounded-full">
+        <div className="sm:hidden fixed left-1 bottom-5 py-2 pb-8 bg-neutral-800 rounded-full">
           {socialLinks.map((link, index) => (
             <SocialLink key={index} href={link.href} icon={link.icon} />
           ))}
