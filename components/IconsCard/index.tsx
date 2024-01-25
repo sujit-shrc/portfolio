@@ -15,7 +15,7 @@ const index: React.FC<IconProp> = ({icon, href, title}) => {
           </Link>
         </div>
       );
-    
+
 }
 
 export default index

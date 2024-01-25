@@ -131,7 +131,7 @@ const Form: React.FC = () => {
         </button>
       </form>
     )}
-  </div>  
+  </div>
   );
 };
 

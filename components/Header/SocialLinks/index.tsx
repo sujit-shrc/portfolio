@@ -2,7 +2,7 @@ interface SocialLinkProps {
     href: string;
     icon: JSX.Element;
   }
-  
+
   const SocialLink: React.FC<SocialLinkProps> = ({ href, icon }) => {
     return (
       <a
