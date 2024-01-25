@@ -3,7 +3,6 @@ import {
   DiReact,
   DiMongodb,
   DiGit,
-  DiDocker,
 } from 'react-icons/di';
 
 import { BsDatabaseFillLock } from "react-icons/bs";

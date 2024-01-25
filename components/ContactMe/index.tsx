@@ -1,5 +1,6 @@
 import IconsCard from "../IconsCard";
 import Form from "./Form";
+import Image from "next/image";
 
 import { BiSolidMessageEdit } from "react-icons/bi";
 import { RiInstagramFill, RiLinkedinFill, RiUser3Fill } from "react-icons/ri";
@@ -14,72 +15,65 @@ import { MdEmail } from "react-icons/md";
 const index: React.FC = () => {
   const social = [
     {
-      icon: <PiGithubLogoFill size="40" />,
+      icon: <PiGithubLogoFill size="20" />,
       href: "https://github.com/mnamesujit",
       title: "Github",
     },
     {
-      icon: <RiLinkedinFill size="40" />,
+      icon: <RiLinkedinFill size="20" color="#0077B5" />,
       href: "https://www.linkedin.com/in/mnamesujit",
       title: "Linkedin",
     },
     {
-      icon: <PiDevToLogoFill size="40" />,
+      icon: <PiDevToLogoFill size="20" />,
       href: "https://dev.to/mnamesujit",
       title: "Dev.To",
     },
     {
-      icon: <MdEmail size="40" />,
+      icon: <MdEmail size="20" color="#4285F4" />,
       href: "mailto:mnamesujit@gmail.com",
       title: "Email",
     },
     {
-      icon: <RiInstagramFill size="40" />,
+      icon: <RiInstagramFill size="20" color="#E4405F" />,
       href: "https://instagram.com/nucleus.me",
       title: "Instagram",
     },
     {
-      icon: <PiTwitterLogoFill size="40" />,
+      icon: <PiTwitterLogoFill size="20" color="#1DA1F2" />,
       href: "https://twitter.com/mnamesujit",
       title: "Twitter",
     },
     {
-      icon: <PiGitlabLogoSimpleFill size="40" />,
+      icon: <PiGitlabLogoSimpleFill size="20" color="#FC6D26" />,
       href: "https://gitlab.com/mnamesujit",
       title: "Gitlab",
     },
   ];
 
   return (
-    <div className="flex flex-col  gap-10 md:gap-14 py-6">
-      <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
-        {social.map(
-          (
-            data: { icon: React.ReactNode; title: string; href: string },
-            index: number
-          ) => (
-            <IconsCard key={index} {...data} />
-          )
-        )}
-      </div>
-
-      <div className="flex flex-col gap-6 lg:flex-row items-center">
+    <div className="w-100 flex flex-col lg:flex-row lg:items-center lg:justify-between py-4 md:py-8">
         <div className="flex flex-col gap-2 items-center">
-          <div className="hidden md:block relative">
-            <RiUser3Fill size={80} />
-            <BiSolidMessageEdit
-              size={30}
-              className="absolute top-[-10px] left-16"
-            />
+          <div className="w-full flex items-center justify-center">
+          <Image src="/img/contact.svg" width={400} height={300} alt="contact-image" />
           </div>
           <h1 className="text-3xl">Send me your message</h1>
-          <p className="">
+          <p>
             Please share your thoughts and opinions, whether about me or my
             website.
           </p>
+          <div className="flex flex-wrap gap-2 md:gap-4 justify-center pb-4 sm:pb-0">
+              {social.map(
+                (
+                  data: { icon: React.ReactNode; title: string; href: string },
+                  index: number
+                ) => (
+                  <IconsCard key={index} {...data} />
+                )
+              )}
+          </div>
         </div>
         <Form />
-      </div>
     </div>
   );
 };
