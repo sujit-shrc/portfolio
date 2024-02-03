@@ -10,7 +10,6 @@ import { TbDevicesCode } from "react-icons/tb";
 import { BiLogoKubernetes, BiLogoPostgresql } from "react-icons/bi";
 import { SiTailwindcss, SiRedux, SiExpress, SiReactquery, SiGithubactions, SiGraphql, SiMariadb, SiNextdotjs, SiDocker } from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandTypescript } from "react-icons/tb";
-import { RiFlutterFill } from "react-icons/ri";
 import { IoHardwareChipOutline } from "react-icons/io5";
 import { VscTerminalBash } from "react-icons/vsc";
 
@@ -23,10 +22,9 @@ const skillsData = {
       { name: 'Next.js', icon: <SiNextdotjs /> },
       { name: 'Tailwind CSS', icon: <SiTailwindcss color="#38B2AC" /> },
       { name: 'Framer Motion', icon: <TbBrandFramerMotion color="#02569B" /> },
-      { name: 'React Query', icon: <SiReactquery color="#0A192F" /> },
+      { name: 'React Query', icon: <SiReactquery color="#9A192F" /> },
       { name: 'Redux', icon: <SiRedux color="#764ABC" /> },
       { name: 'TypeScript', icon: <TbBrandTypescript color="#3178C6" /> },
-      { name: 'Flutter', icon: <RiFlutterFill color="#02569B" /> },
     ],
     icon: <TbDevicesCode color="#61DAFB" />,
   },
@@ -34,7 +32,7 @@ const skillsData = {
     title: 'Backend',
     skills: [
       { name: 'Node.js', icon: <FaNodeJs color="#8CC84B" /> },
-      { name: 'ExpressJs', icon: <SiExpress color="#FFFFFF" /> },
+      { name: 'ExpressJs', icon: <SiExpress /> },
     ],
     icon: <IoHardwareChipOutline color="#8CC84B" />,
   },
@@ -66,7 +64,7 @@ const SkillComponent = () => {
       {Object.values(skillsData).map((category) => (
         <div
           key={category.title}
-          className="border border-0.5 border-gray-800 rounded-lg w-full lg:w-[275px] p-4"
+          className="relative dark:bg-custom overflow-hidden border border-0.5 border-gray-800 rounded-lg w-full lg:w-[275px] p-4"
         >
           <div className='flex gap-4 items-center border-dashed border-b-[1px] border-slate-800 mb-2 pb-2'>
             <div className="text-2xl">{category.icon}</div>
@@ -83,6 +81,8 @@ const SkillComponent = () => {
               </li>
             ))}
           </ul>
+          {/* Background Image */}
+          <div className="text-2xl absolute bottom-[-40px] right-[-15px] text-[8rem] rotate-[20deg] hover:rotate-[40deg] transform-gpu text-blue opacity-20">{category.icon}</div>
         </div>
       ))}
     </div>

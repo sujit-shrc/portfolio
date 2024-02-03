@@ -48,3 +48,15 @@ body {
   }
 }
 
+.bg-custom{
+  z-index: -1;
+  inset: 0px;
+  opacity: 0.4;
+  background-image:
+    radial-gradient(100px at left  400px top 150px,#ff53bb 100%,#0000),
+    radial-gradient(100px at right 400px bottom 150px,#00f8d3 100%,#0000);
+  filter: blur(180px);
+  transform: rotate(3600deg);
+  transition: .5s,600s linear transform;
+}
+

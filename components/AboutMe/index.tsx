@@ -2,6 +2,7 @@ import AboutStack from "./AboutStack"
 import AboutContext from "./AboutContext"
 import Formations from "./Formations"
 import StackGraph from "./StackGraph"
+import GitContributions from "./GitContributions"
 
 const index = () => {
   return (
@@ -10,6 +11,7 @@ const index = () => {
       <StackGraph />
       <AboutContext />
       <Formations />
+      <GitContributions />
     </div>
   )
 }

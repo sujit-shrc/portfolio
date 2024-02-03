@@ -52,13 +52,13 @@ const index: React.FC = () => {
   ];
 
   return (
-    <div className="w-100 flex flex-col lg:flex-row lg:items-center lg:justify-between py-4 md:py-8">
+    <div className="w-100 grid grid-cols-1 lg:grid-cols-2 py-4 md:py-8">
         <div className="flex flex-col gap-2 items-center">
           <div className="w-full flex items-center justify-center">
           <Image src="/img/contact.svg" width={400} height={300} alt="contact-image" />
           </div>
           <h1 className="text-3xl">Send me your message</h1>
-          <p>
+          <p className="text-center">
             Please share your thoughts and opinions, whether about me or my
             website.
           </p>
