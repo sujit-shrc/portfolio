@@ -6,6 +6,7 @@ const page: React.FC = () => {
   const title = data['about-me'].title
   return (
     <div className='flex flex-col gap-8 items-center mt-12'>
+      <div className="custom-background z-10"></div>
         <h1 className='text-4xl'>{title}</h1>
         <AboutMe />
         <Footer />
