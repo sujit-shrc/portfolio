@@ -60,3 +60,12 @@ body {
   transition: .5s,600s linear transform;
 }
 
+@media screen and (max-width: 420px) {
+  .bg-custom {
+    background-image:
+    radial-gradient(100px at left  100px top 150px,#ff53bb 100%,#0000),
+    radial-gradient(100px at right 100px bottom 150px,#00f8d3 100%,#0000);
+    opacity: 0.5;
+  }
+}
+

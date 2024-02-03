@@ -8,6 +8,7 @@ import { FaGithubAlt } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { VscTerminalBash } from "react-icons/vsc";
 import { TbSocial } from "react-icons/tb";
+import { CgMenuGridO } from "react-icons/cg";
 import SocialLink from "./SocialLinks";
 import ThemeSwitch from "../ThemeSwitcher";
 import ScanMe from "../ScanMe";
@@ -20,8 +21,8 @@ const socialLinks = [
     href: "https://www.linkedin.com/in/mnamesujit",
     icon: <FaLinkedinIn className="text-[1.7rem]" />,
   },
+  { href: "/sujit-kumar.pdf", icon: <FaFilePdf className="text-[1.5rem]" download = "sujit-kumar.pdf" /> },
   { href: "https://twitter.com/mnamesujit", icon: <FaXTwitter className="text-[1.5rem]" /> },
-  { href: "/sujit-kumar.pdf", icon: <FaFilePdf className="text-[1.4rem]" download = "sujit-kumar.pdf" /> },
 ];
 
 const Header: React.FC = () => {
@@ -53,19 +54,19 @@ const Header: React.FC = () => {
       {showSocialLinks ? (
         <IoExit
           size={40}
-          className="sm:hidden fixed left-[8px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-1.5 mb-2"
+          className="sm:hidden fixed left-[8px] bottom-0 z-50 bg-gray-900 dark:bg-white text-white dark:text-black rounded-full cursor-pointer p-1.5 mb-2"
           onClick={toggleSocialLinks}
         />
       ) : (
-        <TbSocial
+        <CgMenuGridO
           size={40}
-          className="sm:hidden fixed left-[8px] bottom-0 z-50 bg-white text-black rounded-full cursor-pointer p-1.5 mb-2"
+          className="sm:hidden fixed left-[8px] bottom-0 z-50 bg-gray-900 dark:bg-white text-white dark:text-black rounded-full cursor-pointer p-1.5 mb-2"
           onClick={toggleSocialLinks}
         />
       )}
       
        {showSocialLinks && (
-        <div className="sm:hidden fixed left-1 bottom-5 py-2 pb-8 bg-neutral-800 rounded-full">
+        <div className="sm:hidden fixed left-1 bottom-1 py-2 bg-gray-300 dark:bg-gray-950 dark:bg-opacity-90 rounded-full shadow-md">
           {socialLinks.map((link, index) => (
             <SocialLink key={index} href={link.href} icon={link.icon} />
           ))}

@@ -64,7 +64,7 @@ const SkillComponent = () => {
       {Object.values(skillsData).map((category) => (
         <div
           key={category.title}
-          className="relative dark:bg-custom overflow-hidden border border-0.5 border-gray-800 rounded-lg w-full lg:w-[275px] p-4"
+          className="relative overflow-hidden border border-0.5 border-gray-800 rounded-lg w-full lg:w-[275px] p-4"
         >
           <div className='flex gap-4 items-center border-dashed border-b-[1px] border-slate-800 mb-2 pb-2'>
             <div className="text-2xl">{category.icon}</div>
@@ -81,8 +81,6 @@ const SkillComponent = () => {
               </li>
             ))}
           </ul>
-          {/* Background Image */}
-          <div className="text-2xl absolute bottom-[-40px] right-[-15px] text-[8rem] rotate-[20deg] hover:rotate-[40deg] transform-gpu text-blue opacity-20">{category.icon}</div>
         </div>
       ))}
     </div>
