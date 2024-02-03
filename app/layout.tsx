@@ -70,7 +70,9 @@ export default function RootLayout({
       <body className={inter.className}>
 
         {/* Dotted pattern background */}
-        <div className="fixed dotted-background-light dark:dotted-background-dark inset-0 right-0 z-[-1] ">
+        <div className="fixed dotted-background-light dark:dotted-background-dark inset-0 right-0 z-[-1]">
+        </div>
+        <div className="fixed bg-custom z-[-1]">
         </div>
 
         <ThemeProvider

@@ -21,7 +21,7 @@ const TyperComponent: React.FC = () => {
             where I am developing impactful real-world industry projects with a
             global reach 🌏.
           </p>
-          <p className="text-sm sm:text-base">I'm delving into the dynamic field of DevOps. And passionate about creating efficient and scalable systems.</p>
+          <p className="text-sm sm:text-base">I&spos;m delving into the dynamic field of DevOps. And passionate about creating efficient and scalable systems.</p>
         </div>
         <Link href="/contactme">
         <button className="mt-2 font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-md bg-gray-900 text-white dark:bg-gray-100 dark:text-black shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 hover:bg-gray-900/95 dark:hover:bg-gray-100/95 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none flex items-center gap-1"
