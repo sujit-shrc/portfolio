@@ -36,7 +36,7 @@ const index: React.FC = () => {
   return (
     <div className='flex flex-col gap-2'>
       {contributions.map((contribution, index) => (
-        <div key={index} className="space-y-1 border border-gray-700 p-4 rounded-lg shadow-md w-100">
+        <div key={index} className="space-y-1 border border-gray-700 p-4 rounded-lg shadow-md w-100 hover:bg-gray-500 hover:bg-opacity-10">
           <div className="flex justify-between w-100">
             <div className="space-y-1">
               <div className='flex justify-between'>

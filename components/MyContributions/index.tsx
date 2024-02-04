@@ -24,7 +24,7 @@ const index: React.FC<MyContributionsProps> = ({ posts }) => {
           const formattedNumber = randomNumber > 1000 ? (randomNumber / 1000).toFixed(1) + 'k' : randomNumber;
 
           return (
-            <div key={post.id} className="flex flex-col gap-3 border border-gray-700 rounded-lg px-3 py-3 md:py-4 group hover:bg-gray-900 hover:bg-opacity-5 dark:hover:bg-gray-100 dark:hover:bg-opacity-5">
+            <div key={post.id} className="flex flex-col gap-3 border border-gray-700 rounded-lg px-3 py-3 md:py-4 group hover:bg-gray-900 hover:bg-opacity-5 dark:hover:bg-gray-500 dark:hover:bg-opacity-5">
               <ul className="flex flex-wrap gap-2 md:gap-3">
                 <li className="list-none">| {publishedDate.toLocaleString('en-US', options)}</li>
                 <li className="flex items-center gap-1">

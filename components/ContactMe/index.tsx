@@ -20,7 +20,7 @@ const index: React.FC = () => {
       title: "Github",
     },
     {
-      icon: <RiLinkedinFill size="20" color="#0077B5" />,
+      icon: <RiLinkedinFill size="20" />,
       href: "https://www.linkedin.com/in/mnamesujit",
       title: "Linkedin",
     },
@@ -30,22 +30,22 @@ const index: React.FC = () => {
       title: "Dev.To",
     },
     {
-      icon: <MdEmail size="20" color="#4285F4" />,
+      icon: <MdEmail size="20" />,
       href: "mailto:mnamesujit@gmail.com",
       title: "Email",
     },
     {
-      icon: <RiInstagramFill size="20" color="#E4405F" />,
+      icon: <RiInstagramFill size="20" />,
       href: "https://instagram.com/nucleus.me",
       title: "Instagram",
     },
     {
-      icon: <PiTwitterLogoFill size="20" color="#1DA1F2" />,
+      icon: <PiTwitterLogoFill size="20" />,
       href: "https://twitter.com/mnamesujit",
       title: "Twitter",
     },
     {
-      icon: <PiGitlabLogoSimpleFill size="20" color="#FC6D26" />,
+      icon: <PiGitlabLogoSimpleFill size="20" />,
       href: "https://gitlab.com/mnamesujit",
       title: "Gitlab",
     },
@@ -53,27 +53,26 @@ const index: React.FC = () => {
 
   return (
     <div className="w-100 grid grid-cols-1 lg:grid-cols-2 py-4 md:py-8">
-        <div className="flex flex-col gap-2 items-center">
-          <div className="w-full flex items-center justify-center">
+      <div className="flex flex-col items-center gap-2">
+        <div className="w-full flex items-center justify-center">
           <Image src="/img/contact.svg" width={400} height={300} alt="contact-image" />
-          </div>
-          <h1 className="text-3xl">Send me your message</h1>
-          <p className="text-center">
-            Please share your thoughts and opinions, whether about me or my
-            website.
-          </p>
-          <div className="flex flex-wrap gap-2 md:gap-4 justify-center pb-4 sm:pb-0">
-              {social.map(
-                (
-                  data: { icon: React.ReactNode; title: string; href: string },
-                  index: number
-                ) => (
-                  <IconsCard key={index} {...data} />
-                )
-              )}
+        </div>
+        <div className="flex flex-wrap pb-2 gap-2 md:pb-4 sm:pb-0">
+          <h1 className="text-xl md:text-3xl">Dispatch Your Thoughts, and Reflections!</h1>
+          <p className="">I eagerly await your thoughts and impressions, be it about my endeavors or the tapestry of my website. Your insights are invaluable, and I'm excited to hear your reflections!. Your insights mean a lot, and I'm eager to hear your take!</p>
+          <div className="flex gap-2 md:gap-3.5">
+          {social.map(
+            (
+              data: { icon: React.ReactNode; title: string; href: string },
+              index: number
+            ) => (
+              <IconsCard key={index} {...data} />
+            )
+          )}
           </div>
         </div>
-        <Form />
+      </div>
+      <Form />
     </div>
   );
 };
