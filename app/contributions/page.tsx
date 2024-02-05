@@ -37,9 +37,3 @@ const page: NextPage = async () => {
 }
 
 export default page;
-
-
-
-
-
-

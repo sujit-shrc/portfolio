@@ -44,7 +44,7 @@ const ProjectCard: React.FC<Type> = ({
     { name: "mui", icon: <SiMui size={30} /> },
 
   ];
-  
+
 
   const handleMouseEnter = () => {
     setHovered(true);
