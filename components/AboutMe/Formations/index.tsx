@@ -75,9 +75,9 @@ const index: React.FC = () => {
   };
 
   return (
-    <div className="">
-      <p className="text-3xl font-bold mb-2">Formation, Courses and ECA</p>
-      <div className="flex flex-col gap-0 pt-4 md:flex-row justify-center md:justify-between">
+    <>
+      <p className="text-2xl md:text-4xl font-bold mb-1 md:mb-2">Formation, Courses and ECA</p>
+      <div className="flex flex-col gap-2 pt-2 md:flex-row justify-center md:justify-between">
         <div className="flex flex-col gap-2">
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
             {education.map((edu, index) => (
@@ -111,7 +111,7 @@ const index: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

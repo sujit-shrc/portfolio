@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-100">
+    <div className="flex flex-col md:items-center w-full">
       <div className="flex flex-wrap mb-4">
         {buttonOptions.map((option) => (
           <button
@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 w-full md:w-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 w-full">
         {Mock(selected).map((item, key) => (
           <ImageCard
             link={item.link}

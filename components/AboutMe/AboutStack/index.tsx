@@ -60,7 +60,7 @@ const skillsData = {
 
 const SkillComponent = () => {
   return (
-    <div className="flex flex-col gap-3 md:flex-row md:flex-wrap justify-between">
+    <div className="flex flex-col gap-2 md:gap-3 md:flex-row md:flex-wrap justify-between">
       {Object.values(skillsData).map((category) => (
         <div
           key={category.title}

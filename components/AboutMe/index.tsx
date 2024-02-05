@@ -6,7 +6,7 @@ import GitContributions from "./GitContributions"
 
 const index = () => {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-4 md:gap-10">
       <AboutStack />
       <StackGraph />
       <AboutContext />

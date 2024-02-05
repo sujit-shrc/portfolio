@@ -4,7 +4,7 @@ import { TbCornerDownRightDouble } from "react-icons/tb";
 const index = () => {
   return (
     <div className="flex flex-col gap-4">
-        <h1 className="text-3xl">About Me</h1>
+        <h1 className="text-2xl md:text-4xl font-bold">About Me</h1>
         <div className="flex flex-col gap-4 md:px-4 md:py-2 rounded-lg">
             <div className="flex gap-1 md:gap-2 group">
               <span className="group-hover:text-emerald-500 transition-transform transform group-hover:translate-x-1"><TbCornerDownRightDouble size={20} /></span>
