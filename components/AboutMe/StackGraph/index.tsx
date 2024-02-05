@@ -57,8 +57,8 @@ const Index: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row md:gap-2 text-center">
-      <div className="w-full mb-8 md:w-3/5 lg:w-1/2">
+    <div className="flex flex-col gap-3 md:flex-row md:gap-2 text-center">
+      <div className="w-full md:w-3/5 lg:w-1/2">
         <h1 className="text-2xl">Tech Tools </h1>
         <div className="flex justify-center w-full mx-auto">
           <RadarChart outerRadius={90} width={chartWidth} height={250} data={tools}>
@@ -71,7 +71,7 @@ const Index: React.FC = () => {
           </RadarChart>
         </div>
       </div>
-      <div className="w-full mb-8 md:w-3/5 lg:w-1/2">
+      <div className="w-full md:w-3/5 lg:w-1/2">
         <h1 className="text-2xl">Dev. Libraries</h1>
         <div className="flex justify-center w-full mx-auto">
           <RadarChart outerRadius={90} width={chartWidth} height={250} data={dev}>

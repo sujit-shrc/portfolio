@@ -12,7 +12,7 @@ const Card: React.FC<Props> = ({ href, title, description }) => {
       <Link href={href}>
         <h2 className="text-2xl lg:text-[1.7rem] font-semibold mb-2 group-hover:text-emerald-500">
           {title}{' '}
-          <span className="inline-block FaAngleDoubleRight">
+          <span className="inline-block group-hover:text-emerald-500 transition-transform transform group-hover:translate-x-1.5">
             -&gt;
           </span>
         </h2>

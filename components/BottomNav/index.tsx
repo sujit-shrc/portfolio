@@ -11,8 +11,8 @@ const BottomNav = () => {
   const cardData: CardData[] = data.navigate;
 
   return (
-    <div className="w-full md:w-auto mt-5">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="w-full md:w-auto mt-3 sm:mt-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
         {cardData.map((card, index) => (
           <div key={index} className="w-full sm:w-auto">
             <Card {...card} />

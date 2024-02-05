@@ -24,7 +24,7 @@ const page: NextPage = async () => {
   const posts = await fetchDevToPosts()
   return (
     <div className='flex flex-col gap-2 md:gap-8'>
-      <h1 className='text-xl md:text-2xl md:text-3xl mt-4 md:mt-10'>Delve into My Blog Posts and Explore My Open Source Contributions!</h1>
+      <h1 className='font-bold text-2xl md:text-4xl mt-2 md:mt-10'>Delve into My Blog Posts and Explore My Open Source Contributions!</h1>
       <div className="flex gap-2 md:gap-4">
             <div className='w-100 md:w-3/5 flex flex-col gap-2'>
               <MyContributions posts = {posts} />

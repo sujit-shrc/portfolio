@@ -11,7 +11,7 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/clique-ui",
     },
     {
-      image: "url(./projects/dev-to.png)",
+      image: "url(/projects/dev-to.png)",
       title: "dev.to Clone",
       filter: ["frontend"],
       technologies:["react", "scss", "dev-to"],
@@ -19,7 +19,7 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/dev-to-clone",
     },
     {
-      image: "url(projects/portfolio.png)",
+      image: "url(/projects/portfolio.png)",
       title: "portfolio",
       filter: ["frontend","backend", "complex"],
       technologies:["nextjs","tailwind-css","recharts"],
@@ -27,7 +27,7 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/nucleus.dev",
     },
     {
-      image: "url(./projects/todo-app.png)",
+      image: "url(/projects/todo-app.png)",
       title: "Modern Todo App",
       filter: ["frontend"],
       technologies:["javascript","redux","scss","local-storage"],
@@ -35,7 +35,7 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/modern-todo-app",
     },
     {
-      image: "url(projects/safeyourweb-clone.png)",
+      image: "url(/projects/safeyourweb-clone.png)",
       title: "SafeYourWeb Clone",
       filter: ["frontend","backend", "complex"],
       technologies:["react","typescript","tailwind-css","recharts"],
@@ -43,7 +43,7 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/Safe-Your-Web-Clone",
     },
     {
-      image: "url(projects/admin-dashboard.png)",
+      image: "url(/projects/admin-dashboard.png)",
       title: "Admin Dashboard",
       filter: ["frontend","backend", "complex"],
       technologies:["react","mui","recharts","mariadb","express"],
@@ -51,7 +51,7 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/fullstack-dev-challenge/tree/main/frontend",
     },
     {
-      image: "url(projects/prosecdevs.png)",
+      image: "url(/projects/prosecdevs.png)",
       title: "prosecdevs.com",
       filter: ["frontend","backend"],
       technologies:["typescript","tailwind-css","framer-motion"],
@@ -59,7 +59,7 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/prosecdevs",
     },
     {
-      image: "url(./projects/url-shortner.png)",
+      image: "url(/projects/url-shortner.png)",
       title: "URL Shortner",
       filter: ["backend", "complex"],
       technologies:["express","mongodb", "ejs"],
@@ -67,7 +67,7 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/url-shortner",
     },
     {
-      image: "url(projects/weather.png)",
+      image: "url(/projects/weather.png)",
       title: "Weather App",
       filter: ["frontend"],
       technologies:["html","css","javascript"],
@@ -75,7 +75,7 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/weather-app",
     },
     {
-      image: "url(./projects/pass-gen.png)",
+      image: "url(/projects/pass-gen.png)",
       title: "Password Generator",
       filter: ["frontend"],
       technologies:["typescript","tailwind-css"],
@@ -83,7 +83,7 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/pass-gen",
     },
     {
-      image: "url(./projects/dev-finder.png)",
+      image: "url(/projects/dev-finder.png)",
       title: "dev finder",
       filter: ["frontend"],
       technologies:["html","css","js", "github"],
@@ -99,20 +99,12 @@ const Projects = (selected ?: string) => {
       code: "https://github.com/mnamesujit/clique-backend",
     },
     {
-      image: "url(./projects/time-picker.png)",
+      image: "url(/projects/time-picker.png)",
       title: "Time Picker",
       filter: ["frontend"],
       technologies:["html","tailwind-css"],
       link:"#",
       code: "https://github.com/mnamesujit/time-picker",
-    },
-    {
-      image: "url(./projects/calculator.png)",
-      title: "Calculator",
-      filter: ["frontend"],
-      technologies:["html","css","javascript"],
-      link:"https://mnamesujit.github.io/calculator/",
-      code: "https://github.com/mnamesujit/Calculator",
     },
 
   ];
