@@ -59,7 +59,7 @@ const index: React.FC = () => {
         </div>
         <div className="flex flex-wrap pb-2 gap-2 md:pb-4 sm:pb-0">
           <h1 className="text-xl md:text-3xl">Dispatch Your Thoughts, and Reflections!</h1>
-          <p className="">I eagerly await your thoughts and impressions, be it about my endeavors or the tapestry of my website. Your insights are invaluable, and I'm excited to hear your reflections!. Your insights mean a lot, and I'm eager to hear your take!</p>
+          <p className="">I eagerly await your thoughts and impressions, be it about my endeavors or the tapestry of my website. Your insights are invaluable, and I&apos;m excited to hear your reflections!. Your insights mean a lot, and I&apos;m eager to hear your take!</p>
           <div className="flex gap-2 md:gap-3.5">
           {social.map(
             (
