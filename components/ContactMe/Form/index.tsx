@@ -70,7 +70,7 @@ const Form: React.FC = () => {
       setTimeout(() => {
         setSubmitted(false);
       }, 5000);
-       
+
     }
   };
 
