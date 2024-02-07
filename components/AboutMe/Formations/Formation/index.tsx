@@ -1,8 +1,4 @@
-import { LuCalendarCheck } from "react-icons/lu";
-
-
-
-
+import { LuCalendarCheck } from "@lib/icons";
 
 interface EducationEntryProps {
   degree: string;

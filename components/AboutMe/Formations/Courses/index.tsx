@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { CgChevronDoubleRight } from "react-icons/cg"
-import { FaEyeSlash } from "react-icons/fa";
+import { CgChevronDoubleRight, FaEyeSlash } from "@lib/icons";
 
 
 interface Props {

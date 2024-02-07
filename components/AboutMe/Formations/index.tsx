@@ -1,11 +1,7 @@
 "use client"
 import Education from "./Formation";
 import Courses from "./Courses";
-import { MdOutlineWorkHistory } from "react-icons/md";
-import { SiPaloaltonetworks } from "react-icons/si";
-import { PiGraduationCapFill } from "react-icons/pi";
-import { SiHackster } from "react-icons/si";
-import { BiLogoDevTo } from "react-icons/bi";
+import { MdOutlineWorkHistory, SiPaloaltonetworks, PiGraduationCapFill, SiHackster, BiLogoDevTo } from "@lib/icons";
 
 
 import { MdContentCopy } from "react-icons/md"

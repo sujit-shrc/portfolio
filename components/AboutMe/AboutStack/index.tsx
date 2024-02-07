@@ -1,18 +1,4 @@
-import { FaNodeJs } from 'react-icons/fa6';
-import {
-  DiReact,
-  DiMongodb,
-  DiGit,
-} from 'react-icons/di';
-
-import { BsDatabaseFillLock } from "react-icons/bs";
-import { TbDevicesCode } from "react-icons/tb";
-import { BiLogoKubernetes, BiLogoPostgresql } from "react-icons/bi";
-import { SiTailwindcss, SiRedux, SiExpress, SiReactquery, SiGithubactions, SiGraphql, SiMariadb, SiNextdotjs, SiDocker } from "react-icons/si";
-import { TbBrandFramerMotion, TbBrandTypescript } from "react-icons/tb";
-import { IoHardwareChipOutline } from "react-icons/io5";
-import { VscTerminalBash } from "react-icons/vsc";
-
+import { FaNodeJs,DiReact, DiMongodb, DiGit, BsDatabaseFillLock, TbDevicesCode, BiLogoKubernetes, BiLogoPostgresql, SiTailwindcss, SiRedux, SiExpress, SiReactquery, SiGithubactions, SiGraphql, SiMariadb, SiNextdotjs, SiDocker, TbBrandFramerMotion, TbBrandTypescript, IoHardwareChipOutline, VscTerminalBash } from '@lib/icons';
 
 const skillsData = {
   frontend: {

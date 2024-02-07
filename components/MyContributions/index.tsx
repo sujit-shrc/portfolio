@@ -1,7 +1,4 @@
-import { FaEye } from "react-icons/fa";
-import { BiSolidBookHeart } from "react-icons/bi";
-import { FaAngleDoubleRight } from "react-icons/fa";
-
+import { FaEye, BiSolidBookHeart, FaAngleDoubleRight } from "@lib/icons";
 
 type MyContributionsProps = {
   posts: any[];

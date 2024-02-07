@@ -1,8 +1,7 @@
 "use client"
 
 import React from 'react';
-import { PiSunDimFill } from 'react-icons/pi'
-import { BiSolidMoon } from 'react-icons/bi'
+import { PiSunDimFill, BiSolidMoon } from '@lib/icons';
 import { useTheme } from 'next-themes';
 
 const ThemeSwitch: React.FC = () => {
