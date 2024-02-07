@@ -1,9 +1,7 @@
 "use client"
 
 import { useState } from 'react';
-import { IoExitOutline } from "react-icons/io5";
-import { PiDevicesFill } from "react-icons/pi";
-import { FaShareFromSquare } from "react-icons/fa6";
+import { IoExitOutline, PiDevicesFill, FaShareFromSquare } from "@lib/icons";
 import QRCode from 'react-qr-code';
 
 const Index: React.FC = () => {

@@ -1,4 +1,4 @@
-import { TbCornerDownRightDouble } from "react-icons/tb";
+import { TbCornerDownRightDouble } from "@lib/icons";
 
 
 const index = () => {

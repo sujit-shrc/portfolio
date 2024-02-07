@@ -1,18 +1,12 @@
 "use client"
 
 import { useState } from "react";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaFilePdf } from "react-icons/fa6";
-import { IoExit } from "react-icons/io5";
-import { FaGithubAlt } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
-import { VscTerminalBash } from "react-icons/vsc";
-import { TbSocial } from "react-icons/tb";
-import { CgMenuGridO } from "react-icons/cg";
 import SocialLink from "./SocialLinks";
 import ThemeSwitch from "../ThemeSwitcher";
 import ScanMe from "../ScanMe";
 import Link from "next/link";
+import { FaLinkedinIn, FaFilePdf, IoExit, FaGithubAlt, FaXTwitter, VscTerminalBash, CgMenuGridO } from '@lib/icons';
+
 
 const socialLinks = [
   { href: "https://github.com/mnamesujit", icon: <FaGithubAlt className="text-[1.7rem]" /> },

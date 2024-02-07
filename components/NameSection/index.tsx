@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { HiReceiptTax } from "react-icons/hi";
+import { HiReceiptTax } from "@lib/icons";
 
 const TyperComponent: React.FC = () => {
   return (
     <div className="h-auto md:min-h-[calc(100vh-270px)] flex items-center pt-3 md:pt-10">
-      <div className="w-100 sm:w-3/4 space-y-2">
-        <h1 className="font-limelight text-2xl sm:text-4xl font-bold">
+      <div className="w-100 lg:w-11/12 space-y-2">
+        <h1 className="text-2xl sm:text-[2.8rem] leading-tight font-bold">
           Software Developer |
-          <span className="text-emerald-500"> OpenSource Contributor</span> and{" "}
-          <span className="text-emerald-500">DevOps Explorer</span>
+          <span className="text-emerald-500"> DevOps Explorer</span> and{" "}
+          <span className="text-emerald-500">Technology Enthusiast.</span>
         </h1>
         <div className="space-y-2">
           <p className="text-base">

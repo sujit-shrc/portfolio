@@ -1,10 +1,6 @@
 import {useState} from "react";
 import Link from "next/link";
-import { FaReact, FaGithub, FaHtml5, FaCss3, FaJsSquare, FaFigma, FaNode } from "react-icons/fa";
-import { SiNextdotjs, SiNestjs, SiTypescript,SiTailwindcss, SiExpress, SiMongodb, SiMariadb, SiMui } from "react-icons/si";
-import { TbBrandRedux, TbBrandSass, TbBrandNextjs } from 'react-icons/tb';
-import { TiChartArea } from 'react-icons/ti';
-import Image from "next/image";
+import {FaReact, FaGithub, FaHtml5, FaCss3, FaJsSquare, FaFigma, FaNode, SiNextdotjs, SiNestjs, SiTypescript,SiTailwindcss, SiExpress, SiMongodb, SiMariadb, SiMui, TbBrandRedux, TbBrandSass, TbBrandNextjs, TiChartArea } from '@lib/icons'
 
 interface Type {
   title: string;

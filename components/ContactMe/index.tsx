@@ -2,8 +2,7 @@ import IconsCard from "../IconsCard";
 import Form from "./Form";
 import Image from "next/image";
 
-import { BiSolidMessageEdit } from "react-icons/bi";
-import { RiInstagramFill, RiLinkedinFill, RiUser3Fill } from "react-icons/ri";
+import { RiInstagramFill, RiLinkedinFill } from "@lib/icons";
 import {
   PiGithubLogoFill,
   PiDevToLogoFill,

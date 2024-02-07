@@ -1,7 +1,4 @@
-
-import { TiStarOutline } from 'react-icons/ti'
-import { CgHashtag } from 'react-icons/cg'
-import { BiRadioCircle } from 'react-icons/bi'
+import { TiStarOutline, CgHashtag, BiRadioCircle } from '@lib/icons'
 
 interface Type {
   repo_name: string;
