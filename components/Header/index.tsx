@@ -21,7 +21,7 @@ const socialLinks = [
     icon: <FaGithubAlt className="text-[1.7rem]" />,
   },
   {
-    href: "https://github.com/mnamesujit",
+    href: "https://nucleus-dev-cli.vercel.app/",
     icon: <VscTerminalBash className="text-[1.7rem]" />,
   },
   {
